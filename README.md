@@ -1,4 +1,4 @@
-# databend-workshop
+# Databend-workshop
 
 ## 使用 user stage  & copy into 加载文件 2022-11-17
 - 基本环境: Databend + MinIO
