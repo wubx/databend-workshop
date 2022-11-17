@@ -26,17 +26,17 @@ address json
 
  进云平台: 左则 **Worksheets** -> **New Worksheet**
 
-![](img/kafka_databend_cloud/1.png)
+![](https://static-1255499614.cos.ap-hongkong.myqcloud.com/images/kafka_databend_cloud/1.png)
 
 创建完表结构。
 Databend Cloud Warehouse 连接串获取
 可以在登录 Databend Cloud 后台后，点击 Connect 按钮得到连接信息：
 
-![](img/kafka_databend_cloud/2.png)
+![]([img/kafka_databend_cloud](https://static-1255499614.cos.ap-hongkong.myqcloud.com/images/kafka_databend_cloud)/2.png)
 
 点击 **Reset DB password** 生成密码，记录到安全的地方
 
-![](img/kafka_databend_cloud/3.png)
+![]([https://static-1255499614.cos.ap-hongkong.myqcloud.com/images/kafka_databend_cloud/3.png)
 
 从上面获得连接串信息：
 ```
@@ -90,7 +90,7 @@ bootstrap_servers: 192.168.1.100:9092
 
 Topic 中写入的数据格式参考：
 
-![](img/kafka_databend_cloud/4.png)
+![](https://static-1255499614.cos.ap-hongkong.myqcloud.com/images/kafka_databend_cloud/4.png)
 
 更多支持格式可以参考：https://databend.rs/doc/load-data/
 
