@@ -34,7 +34,7 @@ Databend Cloud Warehouse 连接串获取
 
 ![](img/kafka_databend_cloud/2.png)
 
-点击 Reset DB password 生成密码，记录到安全的地方
+点击 **Reset DB password** 生成密码，记录到安全的地方
 
 ![](img/kafka_databend_cloud/3.png)
 
