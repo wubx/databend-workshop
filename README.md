@@ -7,7 +7,7 @@
    - MySQL 协议连接 Databend
    - Presign 使用
    - copy into 的并行调用
-   - 基本 SQL 执行
+   - 基本 SQL 调用
 
 ## 从 kafka 中加载数据到 Databend Cloud 2022-11-17
 - 基本环境: Databend Cloud on AWS
