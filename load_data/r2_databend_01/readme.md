@@ -8,7 +8,8 @@
 5. 修改 python 脚运行加载数据
 
 ## 安装部署 Databend 
-[English](https://databend.rs/doc/deploy/deploying-databend)
+[English Deploying](https://databend.rs/doc/deploy/deploying-databend)
+
 [中文部署](https://mp.weixin.qq.com/s/6lEb0JiwOrzxVGD_Acc10g)
 
 ## 下载数据
