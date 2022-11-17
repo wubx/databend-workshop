@@ -13,6 +13,7 @@ kafka 是优化的消息队列，本篇文章用于指导一下如何从 kafka �
 
 ## Databend 中创建结构
 假设目标表结构为：
+
 ```
 create table orders(
 ordertime UInt64,
@@ -22,19 +23,20 @@ orderunits float,
 address json
 );
 ```
- 进云平台: 左则 *Worksheets* -> *New Worksheet*
 
-![](img/1.png)
+ 进云平台: 左则 **Worksheets** -> **New Worksheet**
+
+![](img/kafka_databend_cloud/1.png)
 
 创建完表结构。
 Databend Cloud Warehouse 连接串获取
 可以在登录 Databend Cloud 后台后，点击 Connect 按钮得到连接信息：
 
-![](img/2.png)
+![](img/kafka_databend_cloud/2.png)
 
 点击 Reset DB password 生成密码，记录到安全的地方
 
-![](img/3.png)
+![](img/kafka_databend_cloud/3.png)
 
 从上面获得连接串信息：
 ```
@@ -88,7 +90,7 @@ bootstrap_servers: 192.168.1.100:9092
 
 Topic 中写入的数据格式参考：
 
-![](img/4.png)
+![](img/kafka_databend_cloud/4.png)
 
 更多支持格式可以参考：https://databend.rs/doc/load-data/
 
