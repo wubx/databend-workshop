@@ -15,7 +15,7 @@
 - 使用到技能：
   - Databend Cloud python Driver 安装
   - kafka 中数据获取
-  - Presing 使用
+  - Presign 使用
   - copy into 调用
   - 基本 SQL 调用
   
