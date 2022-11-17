@@ -34,6 +34,6 @@ mysql>grant all privileges on *.* to 'wubx'@'%';
 
 ## 应程序参考
 
-[load_local.py](./local_load.py)
+[local_load](./local_load.py)
 
 python3 local_load.py
