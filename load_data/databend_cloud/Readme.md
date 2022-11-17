@@ -24,17 +24,17 @@ address json
 ```
  进云平台: 左则 *Worksheets* -> *New Worksheet*
 
-![](./img/1.png)
+![](img/1.png)
 
 创建完表结构。
 Databend Cloud Warehouse 连接串获取
 可以在登录 Databend Cloud 后台后，点击 Connect 按钮得到连接信息：
 
-![](./img/2.png)
+![](img/2.png)
 
 点击 Reset DB password 生成密码，记录到安全的地方
 
-![](./img/3.png)
+![](img/3.png)
 
 从上面获得连接串信息：
 ```
@@ -82,10 +82,13 @@ bootstrap_servers: 192.168.1.100:9092
 [Demo](./kafka_load.py)
 
 对应的测试数据程序demo:
+```
  ./bin/ksql-datagen quickstart=orders format=json  topic=s3_topic maxInterval=10
+```
+
 Topic 中写入的数据格式参考：
 
-![](./img/4.png)
+![](img/4.png)
 
 更多支持格式可以参考：https://databend.rs/doc/load-data/
 
