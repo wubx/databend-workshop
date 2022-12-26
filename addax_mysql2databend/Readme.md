@@ -1,4 +1,4 @@
-# 使用 Addx 迁移 MySQL 数据到 Databend 
+# 使用 Addax 迁移 MySQL 数据到 Databend 
 
 MySQL 定位在 OLTP 对于大型的 OLAP 分析可以借助于 Databend 实现， 这里面的数据迁移可以借助于：
 
@@ -42,3 +42,5 @@ done
 
 ## 帮助
 阅读： https://wgzhao.github.io/Addax/4.0.11/writer/databendwriter/
+
+这个方法适用于： clickhouse ,posgresql, ... 的数据到 Databend 中。
