@@ -1,4 +1,4 @@
-# Databend-workshop
+# databend-workshop
 
 ## 使用 Addax 迁移 MySQL 数据到 Databend 
 -  基本环境 MysQL,  Databend
