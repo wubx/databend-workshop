@@ -2,7 +2,7 @@
 
 ## 使用 Addax 迁移 MySQL 数据到 Databend 
 -  基本环境 MysQL,  Databend
-- 项目地址: [addax_mysql2databend](./addax_mysql2databend/Readme)
+- 项目地址: [addax_mysql2databend](https://github.com/wubx/databend-workshop/tree/main/addax_mysql2databend)
 -  使用到技能:
    - MySQl 表结构到 Databend 转换
    - streaming_load
