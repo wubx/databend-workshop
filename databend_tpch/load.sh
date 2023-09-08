@@ -3,8 +3,8 @@ source ./env.sh
 
 gen_copy_sql(){
     #echo "copy into ${t} from @tpch_data/tpch100_single_gz/${t}.tbl.gz file_format=(type=csv field_delimiter='|' compression=auto)" | bendsql
-    echo "copy into ${t} from @tpch_data/tpch_30/${t}/ pattern='.*[.]parquet' file_format=(type=parquet)" 
-    echo "copy into ${t} from @tpch_data/tpch_30/${t}/ pattern='.*[.]parquet' file_format=(type=parquet)" | bendsql
+    echo "copy into ${t} from @tpch_data/${database}/${t}/ pattern='.*[.]parquet' file_format=(type=parquet)" 
+    echo "copy into ${t} from @tpch_data/${database}/${t}/ pattern='.*[.]parquet' file_format=(type=parquet)" | bendsql
     echo "analyze table ${t}" | bendsql
 
 }
