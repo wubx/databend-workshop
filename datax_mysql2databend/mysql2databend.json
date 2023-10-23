@@ -1,0 +1,55 @@
+{
+	"job": {
+		"content": [
+			{
+				"reader": {
+					"name": "mysqlreader",
+					"parameter": {
+						"username": "wubx",
+						"password": "wubxwubx",
+						"column": ['*'],
+						"splitPk": "CounterID",
+						"connection": [
+							{
+								"table": [
+									"hits"
+								],
+								"jdbcUrl": [
+									"jdbc:mysql://127.0.0.1:3306/wubx?useSSL=false"
+								]
+							}
+						]
+					}
+				},
+				"writer": {
+					"name": "databendwriter",
+					"parameter": {
+						"username": "wubx",
+						"password": "wubxwubx",
+						"column": ['*'],
+						"batchSize": 10000,
+						"preSql": [
+							"truncate table @table"
+						],
+						"postSql": [
+							""
+						],
+						"connection": [
+							{
+								"jdbcUrl": "jdbc:databend://192.168.1.201:8000/wubx",
+								"table": [
+									"hits"
+								]
+							}
+						]
+					}
+				}
+			}
+		],
+		"setting": {
+			"speed": {
+				"channel": 4
+			}
+		}
+	}
+}
