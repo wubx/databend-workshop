@@ -12,7 +12,7 @@ for i in `seq 1 $N`; do
     query=`cat sql/q${i}.sql`
     echo -n "Q${i}: ["
     for i in $(seq 1 $TRIES); do
-         RES=$(bendsql --time --query "${query}" --output null 2>&1 ||:)
+         RES=$(bendsql --time --query="${query}" --output null 2>&1 ||:)
         [[ "$?" == "0" ]] && echo -n "${RES}" || echo -n "null"
         [[ "$i" != $TRIES ]] && echo -n ", "
 
