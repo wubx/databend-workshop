@@ -39,10 +39,13 @@ def create():
         sql="create table if not exists {0}(\n".format(t)
         i = 0
         for c in t_cols:
+            t = c[1]
+            if t.startswith('varchar'):
+                t ='varchar'
             if c[2]=="NO":
-                sql += "{} {} {}".format(c[0], c[1] ,"NOT NULL")
+                sql += "{} {} {}".format(c[0], t ,"NOT NULL")
             else:
-                sql += "{} {}".format(c[0], c[1])
+                sql += "{} {}".format(c[0], t)
             if c[3]!=None:
                 sql += " DEFAULT '{}'".format(c[3])
 
