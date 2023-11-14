@@ -1,11 +1,9 @@
 # databend-workshop
 
-## Using Databend streaming_load load data from stream
-- Databend, Golang
-- project [Load data use databend streaming_load](https://github.com/wubx/databend-workshop/blob/main/streaming_load/)
-## 使用 Addax 迁移 MySQL 数据到 Databend 
+
+## 使用 DataX 迁移 MySQL 数据到 Databend 
 -  基本环境 MysQL,  Databend
-- 项目地址：[addax_mysql2databend](https://github.com/wubx/databend-workshop/tree/main/addax_mysql2databend)
+- 项目地址：[datax_mysql2databend](https://github.com/wubx/databend-workshop/tree/main/addax_mysql2databend)
 -  使用到技能：
    - MySQl 表结构到 Databend 转换
    - streaming_load
@@ -28,3 +26,6 @@
   - copy into 调用
   - 基本 SQL 调用
   
+## 持续高效的写入 Databend
+
+- todo 
