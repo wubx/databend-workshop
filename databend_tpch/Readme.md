@@ -30,7 +30,7 @@ options="storage_format = 'native' compression = 'lz4'"
 options=""
 ```
 以上内容根据实际情况更改。 
-云平台的连接也可以参考这里：https://docs.databend.cn/getting-started/clients/bendsql
+云平台的连接也可以参考这里：[https://docs.databend.cn/getting-started/clients/bendsql](https://docs.databend.cn/guides/sql-clients/bendsql/)
 
 ### 安装依赖软件
 - duckdb 用于产生 tpch 数据
