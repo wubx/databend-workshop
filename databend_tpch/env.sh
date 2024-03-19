@@ -7,5 +7,5 @@ database="x"
 
 export BENDSQL_DSN="databend://${user}:${password}@${host}:${port}/${database}"
 
-options="storage_format = 'native' compression = 'zstd'"
+options="storage_format = 'native' compression = 'lz4'"
 options=""
