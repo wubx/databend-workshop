@@ -1,0 +1,1293 @@
+# HELP databend_meta_grpc_client_request_inflight .
+# 当前 query 连接 meta 的连接数
+# TYPE databend_meta_grpc_client_request_inflight gauge
+databend_meta_grpc_client_request_inflight 8
+# HELP databend_meta_grpc_client_request_duration_ms .
+# 向 meta leader 请求(request 类型)的时间分布 及 次数
+# Upsert
+# Txn
+# StreamList
+# StreamMGet
+# GetClientInfo
+# TYPE databend_meta_grpc_client_request_duration_ms histogram
+databend_meta_grpc_client_request_duration_ms_sum{endpoint="meta-leader-ip:9191",request="Upsert"} 32097.0
+databend_meta_grpc_client_request_duration_ms_count{endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="10.0",endpoint="meta-leader-ip:9191",request="Upsert"} 1703
+databend_meta_grpc_client_request_duration_ms_bucket{le="50.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2182
+databend_meta_grpc_client_request_duration_ms_bucket{le="100.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2194
+databend_meta_grpc_client_request_duration_ms_bucket{le="250.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2206
+databend_meta_grpc_client_request_duration_ms_bucket{le="500.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2224
+databend_meta_grpc_client_request_duration_ms_bucket{le="1000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="2500.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="5000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="10000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="20000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="30000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="60000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="300000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="600000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="1800000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_bucket{le="9223372036854776000.0",endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_duration_ms_sum{endpoint="meta-leader-ip:9191",request="Txn"} 5553616.0
+databend_meta_grpc_client_request_duration_ms_count{endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="10.0",endpoint="meta-leader-ip:9191",request="Txn"} 344678
+databend_meta_grpc_client_request_duration_ms_bucket{le="50.0",endpoint="meta-leader-ip:9191",request="Txn"} 442996
+databend_meta_grpc_client_request_duration_ms_bucket{le="100.0",endpoint="meta-leader-ip:9191",request="Txn"} 446192
+databend_meta_grpc_client_request_duration_ms_bucket{le="250.0",endpoint="meta-leader-ip:9191",request="Txn"} 447182
+databend_meta_grpc_client_request_duration_ms_bucket{le="500.0",endpoint="meta-leader-ip:9191",request="Txn"} 448419
+databend_meta_grpc_client_request_duration_ms_bucket{le="1000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="2500.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="5000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="10000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="20000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="30000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="60000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="300000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="600000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="1800000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_bucket{le="9223372036854776000.0",endpoint="meta-leader-ip:9191",request="Txn"} 449420
+databend_meta_grpc_client_request_duration_ms_sum{endpoint="meta-leader-ip:9191",request="StreamList"} 1268657.0
+databend_meta_grpc_client_request_duration_ms_count{endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="10.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3057857
+databend_meta_grpc_client_request_duration_ms_bucket{le="50.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3077257
+databend_meta_grpc_client_request_duration_ms_bucket{le="100.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3078736
+databend_meta_grpc_client_request_duration_ms_bucket{le="250.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3080806
+databend_meta_grpc_client_request_duration_ms_bucket{le="500.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081313
+databend_meta_grpc_client_request_duration_ms_bucket{le="1000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="2500.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="5000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="10000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="20000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="30000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="60000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="300000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="600000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="1800000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_bucket{le="9223372036854776000.0",endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_duration_ms_sum{endpoint="meta-leader-ip:9191",request="StreamMGet"} 3279189.0
+databend_meta_grpc_client_request_duration_ms_count{endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="10.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11732720
+databend_meta_grpc_client_request_duration_ms_bucket{le="50.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11770225
+databend_meta_grpc_client_request_duration_ms_bucket{le="100.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11775031
+databend_meta_grpc_client_request_duration_ms_bucket{le="250.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11781969
+databend_meta_grpc_client_request_duration_ms_bucket{le="500.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783375
+databend_meta_grpc_client_request_duration_ms_bucket{le="1000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="2500.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="5000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="10000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="20000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="30000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="60000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="300000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="600000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="1800000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_bucket{le="9223372036854776000.0",endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_duration_ms_sum{endpoint="192.168.140.142:9191",request="GetClientInfo"} 1.0
+databend_meta_grpc_client_request_duration_ms_count{endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="10.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="50.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="100.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="250.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="500.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="1000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="2500.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="5000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="10000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="20000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="30000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="60000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="300000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="600000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="1800000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_duration_ms_bucket{le="9223372036854776000.0",endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+# HELP databend_meta_grpc_client_request_success .
+# 向 meta 请求成功的次数
+# TYPE databend_meta_grpc_client_request_success counter
+databend_meta_grpc_client_request_success_total{endpoint="meta-leader-ip:9191",request="StreamList"} 3081404
+databend_meta_grpc_client_request_success_total{endpoint="meta-leader-ip:9191",request="Upsert"} 2228
+databend_meta_grpc_client_request_success_total{endpoint="meta-leader-ip:9191",request="StreamMGet"} 11783540
+databend_meta_grpc_client_request_success_total{endpoint="192.168.140.142:9191",request="GetClientInfo"} 1
+databend_meta_grpc_client_request_success_total{endpoint="meta-leader-ip:9191",request="Txn"} 449420
+# HELP databend_opendal_requests .
+# OpenDAL 请求的各种类型的次数
+# TYPE databend_opendal_requests counter
+databend_opendal_requests_total{scheme="s3",op="batch"} 25306
+databend_opendal_requests_total{scheme="s3",op="list"} 56055
+databend_opendal_requests_total{scheme="s3",op="presign"} 28049
+databend_opendal_requests_total{scheme="s3",op="read"} 9431425
+databend_opendal_requests_total{scheme="s3",op="write"} 2275688
+databend_opendal_requests_total{scheme="s3",op="delete"} 31692
+databend_opendal_requests_total{scheme="s3",op="stat"} 56056
+# HELP databend_opendal_errors .
+# OpenDAL 失败的次数及类型
+# TYPE databend_opendal_errors counter
+databend_opendal_errors_total{scheme="s3",op="stat",err="NotFound"} 26040
+databend_opendal_errors_total{scheme="s3",op="read",err="NotFound"} 63
+# HELP databend_opendal_request_duration_seconds .
+# OpenDAL 请求对象存储的相关直方图
+# sum 对应 op 总的时间
+# count  对就 op 总的次数
+# TYPE databend_opendal_request_duration_seconds histogram
+databend_opendal_request_duration_seconds_sum{scheme="s3",op="read"} 323162.5679500809
+databend_opendal_request_duration_seconds_count{scheme="s3",op="read"} 9431308
+databend_opendal_request_duration_seconds_bucket{le="0.01",scheme="s3",op="read"} 3806363
+databend_opendal_request_duration_seconds_bucket{le="0.02",scheme="s3",op="read"} 5149879
+databend_opendal_request_duration_seconds_bucket{le="0.04",scheme="s3",op="read"} 6133377
+databend_opendal_request_duration_seconds_bucket{le="0.08",scheme="s3",op="read"} 8670591
+databend_opendal_request_duration_seconds_bucket{le="0.16",scheme="s3",op="read"} 9260015
+databend_opendal_request_duration_seconds_bucket{le="0.32",scheme="s3",op="read"} 9393196
+databend_opendal_request_duration_seconds_bucket{le="0.64",scheme="s3",op="read"} 9419046
+databend_opendal_request_duration_seconds_bucket{le="1.28",scheme="s3",op="read"} 9426207
+databend_opendal_request_duration_seconds_bucket{le="2.56",scheme="s3",op="read"} 9429052
+databend_opendal_request_duration_seconds_bucket{le="5.12",scheme="s3",op="read"} 9430533
+databend_opendal_request_duration_seconds_bucket{le="10.24",scheme="s3",op="read"} 9431149
+databend_opendal_request_duration_seconds_bucket{le="20.48",scheme="s3",op="read"} 9431284
+databend_opendal_request_duration_seconds_bucket{le="40.96",scheme="s3",op="read"} 9431307
+databend_opendal_request_duration_seconds_bucket{le="81.92",scheme="s3",op="read"} 9431308
+databend_opendal_request_duration_seconds_bucket{le="163.84",scheme="s3",op="read"} 9431308
+databend_opendal_request_duration_seconds_bucket{le="327.68",scheme="s3",op="read"} 9431308
+databend_opendal_request_duration_seconds_bucket{le="9223372036854776000.0",scheme="s3",op="read"} 9431308
+databend_opendal_request_duration_seconds_sum{scheme="s3",op="write"} 70150.38927537839
+databend_opendal_request_duration_seconds_count{scheme="s3",op="write"} 2275686
+databend_opendal_request_duration_seconds_bucket{le="0.01",scheme="s3",op="write"} 1518366
+databend_opendal_request_duration_seconds_bucket{le="0.02",scheme="s3",op="write"} 1873843
+databend_opendal_request_duration_seconds_bucket{le="0.04",scheme="s3",op="write"} 1982411
+databend_opendal_request_duration_seconds_bucket{le="0.08",scheme="s3",op="write"} 2063573
+databend_opendal_request_duration_seconds_bucket{le="0.16",scheme="s3",op="write"} 2159270
+databend_opendal_request_duration_seconds_bucket{le="0.32",scheme="s3",op="write"} 2239157
+databend_opendal_request_duration_seconds_bucket{le="0.64",scheme="s3",op="write"} 2272907
+databend_opendal_request_duration_seconds_bucket{le="1.28",scheme="s3",op="write"} 2274756
+databend_opendal_request_duration_seconds_bucket{le="2.56",scheme="s3",op="write"} 2275410
+databend_opendal_request_duration_seconds_bucket{le="5.12",scheme="s3",op="write"} 2275606
+databend_opendal_request_duration_seconds_bucket{le="10.24",scheme="s3",op="write"} 2275677
+databend_opendal_request_duration_seconds_bucket{le="20.48",scheme="s3",op="write"} 2275684
+databend_opendal_request_duration_seconds_bucket{le="40.96",scheme="s3",op="write"} 2275686
+databend_opendal_request_duration_seconds_bucket{le="81.92",scheme="s3",op="write"} 2275686
+databend_opendal_request_duration_seconds_bucket{le="163.84",scheme="s3",op="write"} 2275686
+databend_opendal_request_duration_seconds_bucket{le="327.68",scheme="s3",op="write"} 2275686
+databend_opendal_request_duration_seconds_bucket{le="9223372036854776000.0",scheme="s3",op="write"} 2275686
+databend_opendal_request_duration_seconds_sum{scheme="s3",op="batch"} 861.9771176489953
+databend_opendal_request_duration_seconds_count{scheme="s3",op="batch"} 25306
+databend_opendal_request_duration_seconds_bucket{le="0.01",scheme="s3",op="batch"} 6070
+databend_opendal_request_duration_seconds_bucket{le="0.02",scheme="s3",op="batch"} 6612
+databend_opendal_request_duration_seconds_bucket{le="0.04",scheme="s3",op="batch"} 6736
+databend_opendal_request_duration_seconds_bucket{le="0.08",scheme="s3",op="batch"} 25128
+databend_opendal_request_duration_seconds_bucket{le="0.16",scheme="s3",op="batch"} 25252
+databend_opendal_request_duration_seconds_bucket{le="0.32",scheme="s3",op="batch"} 25305
+databend_opendal_request_duration_seconds_bucket{le="0.64",scheme="s3",op="batch"} 25305
+databend_opendal_request_duration_seconds_bucket{le="1.28",scheme="s3",op="batch"} 25305
+databend_opendal_request_duration_seconds_bucket{le="2.56",scheme="s3",op="batch"} 25305
+databend_opendal_request_duration_seconds_bucket{le="5.12",scheme="s3",op="batch"} 25305
+databend_opendal_request_duration_seconds_bucket{le="10.24",scheme="s3",op="batch"} 25306
+databend_opendal_request_duration_seconds_bucket{le="20.48",scheme="s3",op="batch"} 25306
+databend_opendal_request_duration_seconds_bucket{le="40.96",scheme="s3",op="batch"} 25306
+databend_opendal_request_duration_seconds_bucket{le="81.92",scheme="s3",op="batch"} 25306
+databend_opendal_request_duration_seconds_bucket{le="163.84",scheme="s3",op="batch"} 25306
+databend_opendal_request_duration_seconds_bucket{le="327.68",scheme="s3",op="batch"} 25306
+databend_opendal_request_duration_seconds_bucket{le="9223372036854776000.0",scheme="s3",op="batch"} 25306
+databend_opendal_request_duration_seconds_sum{scheme="s3",op="presign"} 3.904314572000005
+databend_opendal_request_duration_seconds_count{scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="0.01",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="0.02",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="0.04",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="0.08",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="0.16",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="0.32",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="0.64",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="1.28",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="2.56",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="5.12",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="10.24",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="20.48",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="40.96",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="81.92",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="163.84",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="327.68",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_bucket{le="9223372036854776000.0",scheme="s3",op="presign"} 28049
+databend_opendal_request_duration_seconds_sum{scheme="s3",op="list"} 6.624859884000069
+databend_opendal_request_duration_seconds_count{scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="0.01",scheme="s3",op="list"} 56047
+databend_opendal_request_duration_seconds_bucket{le="0.02",scheme="s3",op="list"} 56052
+databend_opendal_request_duration_seconds_bucket{le="0.04",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="0.08",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="0.16",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="0.32",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="0.64",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="1.28",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="2.56",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="5.12",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="10.24",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="20.48",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="40.96",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="81.92",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="163.84",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="327.68",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_bucket{le="9223372036854776000.0",scheme="s3",op="list"} 56055
+databend_opendal_request_duration_seconds_sum{scheme="s3",op="stat"} 300.9362927940023
+databend_opendal_request_duration_seconds_count{scheme="s3",op="stat"} 56056
+databend_opendal_request_duration_seconds_bucket{le="0.01",scheme="s3",op="stat"} 54068
+databend_opendal_request_duration_seconds_bucket{le="0.02",scheme="s3",op="stat"} 55591
+databend_opendal_request_duration_seconds_bucket{le="0.04",scheme="s3",op="stat"} 55839
+databend_opendal_request_duration_seconds_bucket{le="0.08",scheme="s3",op="stat"} 55896
+databend_opendal_request_duration_seconds_bucket{le="0.16",scheme="s3",op="stat"} 55897
+databend_opendal_request_duration_seconds_bucket{le="0.32",scheme="s3",op="stat"} 55982
+databend_opendal_request_duration_seconds_bucket{le="0.64",scheme="s3",op="stat"} 55983
+databend_opendal_request_duration_seconds_bucket{le="1.28",scheme="s3",op="stat"} 56054
+databend_opendal_request_duration_seconds_bucket{le="2.56",scheme="s3",op="stat"} 56054
+databend_opendal_request_duration_seconds_bucket{le="5.12",scheme="s3",op="stat"} 56055
+databend_opendal_request_duration_seconds_bucket{le="10.24",scheme="s3",op="stat"} 56056
+databend_opendal_request_duration_seconds_bucket{le="20.48",scheme="s3",op="stat"} 56056
+databend_opendal_request_duration_seconds_bucket{le="40.96",scheme="s3",op="stat"} 56056
+databend_opendal_request_duration_seconds_bucket{le="81.92",scheme="s3",op="stat"} 56056
+databend_opendal_request_duration_seconds_bucket{le="163.84",scheme="s3",op="stat"} 56056
+databend_opendal_request_duration_seconds_bucket{le="327.68",scheme="s3",op="stat"} 56056
+databend_opendal_request_duration_seconds_bucket{le="9223372036854776000.0",scheme="s3",op="stat"} 56056
+databend_opendal_request_duration_seconds_sum{scheme="s3",op="delete"} 184.5503780469998
+databend_opendal_request_duration_seconds_count{scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="0.01",scheme="s3",op="delete"} 30124
+databend_opendal_request_duration_seconds_bucket{le="0.02",scheme="s3",op="delete"} 31234
+databend_opendal_request_duration_seconds_bucket{le="0.04",scheme="s3",op="delete"} 31540
+databend_opendal_request_duration_seconds_bucket{le="0.08",scheme="s3",op="delete"} 31619
+databend_opendal_request_duration_seconds_bucket{le="0.16",scheme="s3",op="delete"} 31643
+databend_opendal_request_duration_seconds_bucket{le="0.32",scheme="s3",op="delete"} 31690
+databend_opendal_request_duration_seconds_bucket{le="0.64",scheme="s3",op="delete"} 31691
+databend_opendal_request_duration_seconds_bucket{le="1.28",scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="2.56",scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="5.12",scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="10.24",scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="20.48",scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="40.96",scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="81.92",scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="163.84",scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="327.68",scheme="s3",op="delete"} 31692
+databend_opendal_request_duration_seconds_bucket{le="9223372036854776000.0",scheme="s3",op="delete"} 31692
+# HELP databend_opendal_bytes_histogram .
+# 从 OP 上看响应时间和次数的分布
+# TYPE databend_opendal_bytes_histogram histogram
+databend_opendal_bytes_histogram_sum{scheme="s3",op="write"} 5305016881334.0
+databend_opendal_bytes_histogram_count{scheme="s3",op="write"} 2275686
+databend_opendal_bytes_histogram_bucket{le="1.0",scheme="s3",op="write"} 0
+databend_opendal_bytes_histogram_bucket{le="2.0",scheme="s3",op="write"} 0
+databend_opendal_bytes_histogram_bucket{le="4.0",scheme="s3",op="write"} 0
+databend_opendal_bytes_histogram_bucket{le="8.0",scheme="s3",op="write"} 0
+databend_opendal_bytes_histogram_bucket{le="16.0",scheme="s3",op="write"} 0
+databend_opendal_bytes_histogram_bucket{le="32.0",scheme="s3",op="write"} 0
+databend_opendal_bytes_histogram_bucket{le="64.0",scheme="s3",op="write"} 0
+databend_opendal_bytes_histogram_bucket{le="128.0",scheme="s3",op="write"} 448698
+databend_opendal_bytes_histogram_bucket{le="256.0",scheme="s3",op="write"} 448698
+databend_opendal_bytes_histogram_bucket{le="512.0",scheme="s3",op="write"} 448698
+databend_opendal_bytes_histogram_bucket{le="1024.0",scheme="s3",op="write"} 448705
+databend_opendal_bytes_histogram_bucket{le="2048.0",scheme="s3",op="write"} 596073
+databend_opendal_bytes_histogram_bucket{le="4096.0",scheme="s3",op="write"} 1044501
+databend_opendal_bytes_histogram_bucket{le="8192.0",scheme="s3",op="write"} 1272097
+databend_opendal_bytes_histogram_bucket{le="16384.0",scheme="s3",op="write"} 1413081
+databend_opendal_bytes_histogram_bucket{le="32768.0",scheme="s3",op="write"} 1522276
+databend_opendal_bytes_histogram_bucket{le="9223372036854776000.0",scheme="s3",op="write"} 2275686
+databend_opendal_bytes_histogram_sum{scheme="s3",op="read"} 8037329899934.0
+databend_opendal_bytes_histogram_count{scheme="s3",op="read"} 9431308
+databend_opendal_bytes_histogram_bucket{le="1.0",scheme="s3",op="read"} 63
+databend_opendal_bytes_histogram_bucket{le="2.0",scheme="s3",op="read"} 63
+databend_opendal_bytes_histogram_bucket{le="4.0",scheme="s3",op="read"} 63
+databend_opendal_bytes_histogram_bucket{le="8.0",scheme="s3",op="read"} 63
+databend_opendal_bytes_histogram_bucket{le="16.0",scheme="s3",op="read"} 63
+databend_opendal_bytes_histogram_bucket{le="32.0",scheme="s3",op="read"} 63
+databend_opendal_bytes_histogram_bucket{le="64.0",scheme="s3",op="read"} 66
+databend_opendal_bytes_histogram_bucket{le="128.0",scheme="s3",op="read"} 214873
+databend_opendal_bytes_histogram_bucket{le="256.0",scheme="s3",op="read"} 229649
+databend_opendal_bytes_histogram_bucket{le="512.0",scheme="s3",op="read"} 253345
+databend_opendal_bytes_histogram_bucket{le="1024.0",scheme="s3",op="read"} 268558
+databend_opendal_bytes_histogram_bucket{le="2048.0",scheme="s3",op="read"} 1345494
+databend_opendal_bytes_histogram_bucket{le="4096.0",scheme="s3",op="read"} 3978535
+databend_opendal_bytes_histogram_bucket{le="8192.0",scheme="s3",op="read"} 5373200
+databend_opendal_bytes_histogram_bucket{le="16384.0",scheme="s3",op="read"} 5471581
+databend_opendal_bytes_histogram_bucket{le="32768.0",scheme="s3",op="read"} 5559799
+databend_opendal_bytes_histogram_bucket{le="9223372036854776000.0",scheme="s3",op="read"} 9431308
+# HELP databend_opendal_bytes .
+# OpenDAL 端读取和写入的大小
+# TYPE databend_opendal_bytes counter
+databend_opendal_bytes_total{scheme="s3",op="read"} 8037329899934
+databend_opendal_bytes_total{scheme="s3",op="write"} 5305016881334
+# HELP databend_cluster_discovered_node .
+# 对外上报的节点信息
+# TYPE databend_cluster_discovered_node gauge
+databend_cluster_discovered_node{local_id="7V7rm9jFYiJ4OhczPXRtX",cluster_id="w189",tenant_id="wubx",flight_address="0.0.0.0:9091"} 1
+# HELP databend_session_connect_numbers .
+# 节点总的连接次数
+# TYPE databend_session_connect_numbers counter
+databend_session_connect_numbers_total 1502739
+# HELP databend_session_connections .
+# 节点当前的连接数
+# TYPE databend_session_connections gauge
+databend_session_connections 30
+# HELP databend_query_start .
+# Query = SELECT 执行次数
+# Update = Update 执行次数据（ 是否包含  merge into ）
+# Insert = Insert 执行次数
+# TYPE databend_query_start counter
+databend_query_start_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56260
+databend_query_start_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_start_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8962
+databend_query_start_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322299
+# HELP databend_query_duration_ms .
+# 每个 Query 执行时间分布情况
+# TYPE databend_query_duration_ms histogram
+databend_query_duration_ms_sum{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 616762718.0319969
+databend_query_duration_ms_count{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322295
+databend_query_duration_ms_bucket{le="10.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 0
+databend_query_duration_ms_bucket{le="50.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 0
+databend_query_duration_ms_bucket{le="100.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 15430
+databend_query_duration_ms_bucket{le="250.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 58099
+databend_query_duration_ms_bucket{le="500.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 100915
+databend_query_duration_ms_bucket{le="1000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 144276
+databend_query_duration_ms_bucket{le="2500.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 217143
+databend_query_duration_ms_bucket{le="5000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 300909
+databend_query_duration_ms_bucket{le="10000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 321615
+databend_query_duration_ms_bucket{le="20000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322205
+databend_query_duration_ms_bucket{le="30000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322263
+databend_query_duration_ms_bucket{le="60000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322290
+databend_query_duration_ms_bucket{le="300000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322295
+databend_query_duration_ms_bucket{le="600000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322295
+databend_query_duration_ms_bucket{le="1800000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322295
+databend_query_duration_ms_bucket{le="9223372036854776000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322295
+databend_query_duration_ms_sum{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 705303.0720000018
+databend_query_duration_ms_count{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_duration_ms_bucket{le="10.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 12065
+databend_query_duration_ms_bucket{le="50.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 21000
+databend_query_duration_ms_bucket{le="100.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 21684
+databend_query_duration_ms_bucket{le="250.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 21787
+databend_query_duration_ms_bucket{le="500.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 21837
+databend_query_duration_ms_bucket{le="1000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 21892
+databend_query_duration_ms_bucket{le="2500.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 21967
+databend_query_duration_ms_bucket{le="5000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22006
+databend_query_duration_ms_bucket{le="10000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_duration_ms_bucket{le="20000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_duration_ms_bucket{le="30000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_duration_ms_bucket{le="60000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_duration_ms_bucket{le="300000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_duration_ms_bucket{le="600000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_duration_ms_bucket{le="1800000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_duration_ms_bucket{le="9223372036854776000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_duration_ms_sum{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 2789301.8910000214
+databend_query_duration_ms_count{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56259
+databend_query_duration_ms_bucket{le="10.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 26980
+databend_query_duration_ms_bucket{le="50.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 31166
+databend_query_duration_ms_bucket{le="100.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 46084
+databend_query_duration_ms_bucket{le="250.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 55930
+databend_query_duration_ms_bucket{le="500.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56196
+databend_query_duration_ms_bucket{le="1000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56222
+databend_query_duration_ms_bucket{le="2500.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56256
+databend_query_duration_ms_bucket{le="5000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56258
+databend_query_duration_ms_bucket{le="10000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56258
+databend_query_duration_ms_bucket{le="20000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56259
+databend_query_duration_ms_bucket{le="30000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56259
+databend_query_duration_ms_bucket{le="60000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56259
+databend_query_duration_ms_bucket{le="300000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56259
+databend_query_duration_ms_bucket{le="600000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56259
+databend_query_duration_ms_bucket{le="1800000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56259
+databend_query_duration_ms_bucket{le="9223372036854776000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56259
+databend_query_duration_ms_sum{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 73103990.6139997
+databend_query_duration_ms_count{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8958
+databend_query_duration_ms_bucket{le="10.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+databend_query_duration_ms_bucket{le="50.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+databend_query_duration_ms_bucket{le="100.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+databend_query_duration_ms_bucket{le="250.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+databend_query_duration_ms_bucket{le="500.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+databend_query_duration_ms_bucket{le="1000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 7
+databend_query_duration_ms_bucket{le="2500.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 170
+databend_query_duration_ms_bucket{le="5000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 1744
+databend_query_duration_ms_bucket{le="10000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 6472
+databend_query_duration_ms_bucket{le="20000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8913
+databend_query_duration_ms_bucket{le="30000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8949
+databend_query_duration_ms_bucket{le="60000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8957
+databend_query_duration_ms_bucket{le="300000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8958
+databend_query_duration_ms_bucket{le="600000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8958
+databend_query_duration_ms_bucket{le="1800000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8958
+databend_query_duration_ms_bucket{le="9223372036854776000.0",handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8958
+# HELP databend_query_write_rows .
+# 写入行数的累计值
+# TYPE databend_query_write_rows counter
+databend_query_write_rows_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 0
+databend_query_write_rows_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 0
+databend_query_write_rows_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 11569108
+databend_query_write_rows_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2887019162
+# HELP databend_query_write_bytes .
+# 写入字节的累计值
+# TYPE databend_query_write_bytes counter
+databend_query_write_bytes_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 0
+databend_query_write_bytes_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 4591205952
+databend_query_write_bytes_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 0
+databend_query_write_bytes_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 3129738749220
+# HELP databend_query_write_io_bytes .
+# ？和上面的有什么区别 Eaon:查询写入和传输的总数据大小(以字节为单位)。
+# TYPE databend_query_write_io_bytes counter
+databend_query_write_io_bytes_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+databend_query_write_io_bytes_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 79624170262
+databend_query_write_io_bytes_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 0
+databend_query_write_io_bytes_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 17230
+# HELP databend_query_scan_rows .
+# 按查询扫描的数据行的总数。
+# TYPE databend_query_scan_rows counter
+databend_query_scan_rows_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 14175970594
+databend_query_scan_rows_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 78839619
+databend_query_scan_rows_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 3199730436
+databend_query_scan_rows_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 38
+
+# HELP databend_query_scan_bytes .
+# 以字节为单位的查询总扫描数据大小。读取的数据(解压和反序列化后)的尺寸
+# TYPE databend_query_scan_bytes counter
+databend_query_scan_bytes_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 8175
+databend_query_scan_bytes_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 2104257059883
+databend_query_scan_bytes_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 9703762855
+databend_query_scan_bytes_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 6961544678664
+# HELP databend_query_scan_io_bytes .
+# 以字节为单位的查询的总扫描传输数据大小。（这个是opendal层(operator的一个wrapper)统计到的IO读的字节数）
+# - raw data, 可能是压缩格式的
+# - 除了table data bloc, 也包括 table meta 数据(snapshot, segment, bloom index etc)
+# TYPE databend_query_scan_io_bytes counter
+databend_query_scan_io_bytes_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 21416857
+databend_query_scan_io_bytes_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 1530209335
+databend_query_scan_io_bytes_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 79185
+databend_query_scan_io_bytes_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+# HELP databend_query_scan_partitions .
+# 按查询扫描的分区总数（block)。
+# TYPE databend_query_scan_partitions counter
+databend_query_scan_partitions_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 0
+databend_query_scan_partitions_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+databend_query_scan_partitions_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 9074
+databend_query_scan_partitions_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 77
+# HELP databend_query_total_partitions .
+# 要查询的分区总数。
+# TYPE databend_query_total_partitions counter
+databend_query_total_partitions_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 252088
+databend_query_total_partitions_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 225
+databend_query_total_partitions_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 0
+databend_query_total_partitions_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+
+# HELP databend_query_result_rows .
+# 每个查询结果返回的数据行总数。累积的值(多个query返回的scan到的行数的累加)
+# TYPE databend_query_result_rows counter
+
+databend_query_result_rows_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 251767
+databend_query_result_rows_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+databend_query_result_rows_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 28262
+databend_query_result_rows_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 0
+# HELP databend_query_result_bytes .
+# 同上
+# TYPE databend_query_result_bytes counter
+databend_query_result_bytes_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 26152214
+databend_query_result_bytes_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 0
+databend_query_result_bytes_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 5397751
+databend_query_result_bytes_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 0
+# HELP databend_query_success .
+# query 分类型成功的次数
+# TYPE databend_query_success counter
+databend_query_success_total{handler="HTTPQuery",kind="Update",tenant="wubx",cluster="w189"} 8958
+databend_query_success_total{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 22010
+databend_query_success_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 322294
+databend_query_success_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 56259
+# HELP databend_session_close_numbers .
+# session 关闭的次数
+# TYPE databend_session_close_numbers counter
+databend_session_close_numbers_total 1086261
+# HELP databend_query_http_requests_count .
+# 每个节点调用的次数
+# TYPE databend_query_http_requests_count counter
+databend_query_http_requests_count_total{method="GET",api="/:id/kill",status="200 OK"} 448237
+databend_query_http_requests_count_total{method="POST",api="/",status="200 OK"} 416418
+databend_query_http_requests_count_total{method="POST",api="/:id/kill",status="200 OK"} 1
+databend_query_http_requests_count_total{method="GET",api="/:id/final",status="200 OK"} 215658
+databend_query_http_requests_count_total{method="GET",api="/:id/page/:page_no",status="200 OK"} 2999
+# HELP databend_query_http_response_duration_seconds .
+# Query 响应的时间分布
+# TYPE databend_query_http_response_duration_seconds histogram
+databend_query_http_response_duration_seconds_sum{method="GET",api="/:id/final"} 67.71741160899947
+databend_query_http_response_duration_seconds_count{method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="0.02",method="GET",api="/:id/final"} 215650
+databend_query_http_response_duration_seconds_bucket{le="0.05",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="0.1",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="0.25",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="0.5",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="1.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="2.5",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="5.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="10.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="20.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="30.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="60.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="300.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="600.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="1800.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_bucket{le="9223372036854776000.0",method="GET",api="/:id/final"} 215658
+databend_query_http_response_duration_seconds_sum{method="POST",api="/:id/kill"} 0.0000562
+databend_query_http_response_duration_seconds_count{method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="0.02",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="0.05",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="0.1",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="0.25",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="0.5",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="1.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="2.5",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="5.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="10.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="20.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="30.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="60.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="300.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="600.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="1800.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_bucket{le="9223372036854776000.0",method="POST",api="/:id/kill"} 1
+databend_query_http_response_duration_seconds_sum{method="POST",api="/"} 688283.1509494871
+databend_query_http_response_duration_seconds_count{method="POST",api="/"} 416418
+databend_query_http_response_duration_seconds_bucket{le="0.02",method="POST",api="/"} 41651
+databend_query_http_response_duration_seconds_bucket{le="0.05",method="POST",api="/"} 54009
+databend_query_http_response_duration_seconds_bucket{le="0.1",method="POST",api="/"} 82547
+databend_query_http_response_duration_seconds_bucket{le="0.25",method="POST",api="/"} 141163
+databend_query_http_response_duration_seconds_bucket{le="0.5",method="POST",api="/"} 184661
+databend_query_http_response_duration_seconds_bucket{le="1.0",method="POST",api="/"} 228435
+databend_query_http_response_duration_seconds_bucket{le="2.5",method="POST",api="/"} 301927
+databend_query_http_response_duration_seconds_bucket{le="5.0",method="POST",api="/"} 387586
+databend_query_http_response_duration_seconds_bucket{le="10.0",method="POST",api="/"} 413212
+databend_query_http_response_duration_seconds_bucket{le="20.0",method="POST",api="/"} 416418
+databend_query_http_response_duration_seconds_bucket{le="30.0",method="POST",api="/"} 416418
+databend_query_http_response_duration_seconds_bucket{le="60.0",method="POST",api="/"} 416418
+databend_query_http_response_duration_seconds_bucket{le="300.0",method="POST",api="/"} 416418
+databend_query_http_response_duration_seconds_bucket{le="600.0",method="POST",api="/"} 416418
+databend_query_http_response_duration_seconds_bucket{le="1800.0",method="POST",api="/"} 416418
+databend_query_http_response_duration_seconds_bucket{le="9223372036854776000.0",method="POST",api="/"} 416418
+databend_query_http_response_duration_seconds_sum{method="GET",api="/:id/kill"} 59.19510499300064
+databend_query_http_response_duration_seconds_count{method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="0.02",method="GET",api="/:id/kill"} 448225
+databend_query_http_response_duration_seconds_bucket{le="0.05",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="0.1",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="0.25",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="0.5",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="1.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="2.5",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="5.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="10.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="20.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="30.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="60.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="300.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="600.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="1800.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_bucket{le="9223372036854776000.0",method="GET",api="/:id/kill"} 448237
+databend_query_http_response_duration_seconds_sum{method="GET",api="/:id/page/:page_no"} 7995.454374380014
+databend_query_http_response_duration_seconds_count{method="GET",api="/:id/page/:page_no"} 2999
+databend_query_http_response_duration_seconds_bucket{le="0.02",method="GET",api="/:id/page/:page_no"} 50
+databend_query_http_response_duration_seconds_bucket{le="0.05",method="GET",api="/:id/page/:page_no"} 81
+databend_query_http_response_duration_seconds_bucket{le="0.1",method="GET",api="/:id/page/:page_no"} 136
+databend_query_http_response_duration_seconds_bucket{le="0.25",method="GET",api="/:id/page/:page_no"} 266
+databend_query_http_response_duration_seconds_bucket{le="0.5",method="GET",api="/:id/page/:page_no"} 489
+databend_query_http_response_duration_seconds_bucket{le="1.0",method="GET",api="/:id/page/:page_no"} 856
+databend_query_http_response_duration_seconds_bucket{le="2.5",method="GET",api="/:id/page/:page_no"} 1834
+databend_query_http_response_duration_seconds_bucket{le="5.0",method="GET",api="/:id/page/:page_no"} 2577
+databend_query_http_response_duration_seconds_bucket{le="10.0",method="GET",api="/:id/page/:page_no"} 2843
+databend_query_http_response_duration_seconds_bucket{le="20.0",method="GET",api="/:id/page/:page_no"} 2999
+databend_query_http_response_duration_seconds_bucket{le="30.0",method="GET",api="/:id/page/:page_no"} 2999
+databend_query_http_response_duration_seconds_bucket{le="60.0",method="GET",api="/:id/page/:page_no"} 2999
+databend_query_http_response_duration_seconds_bucket{le="300.0",method="GET",api="/:id/page/:page_no"} 2999
+databend_query_http_response_duration_seconds_bucket{le="600.0",method="GET",api="/:id/page/:page_no"} 2999
+databend_query_http_response_duration_seconds_bucket{le="1800.0",method="GET",api="/:id/page/:page_no"} 2999
+databend_query_http_response_duration_seconds_bucket{le="9223372036854776000.0",method="GET",api="/:id/page/:page_no"} 2999
+
+# HELP databend_cache_access_count .
+# 这个是cache被访问过的次数(不管是否命中已经缓存了的对象)
+# TYPE databend_cache_access_count counter
+databend_cache_access_count_total{cache_name="segment_info"} 18491890
+databend_cache_access_count_total{cache_name="bloom_index_filter"} 392514
+databend_cache_access_count_total{cache_name="prune_partitions"} 178079
+databend_cache_access_count_total{cache_name="bloom_index_file_meta_data"} 390855
+databend_cache_access_count_total{cache_name="table_snapshot"} 994084
+# HELP databend_cache_miss_count .
+# 请求在 Cache 没有命中的次数
+# TYPE databend_cache_miss_count counter
+databend_cache_miss_count_total{cache_name="bloom_index_filter"} 270621
+databend_cache_miss_count_total{cache_name="prune_partitions"} 178048
+databend_cache_miss_count_total{cache_name="segment_info"} 4866444
+databend_cache_miss_count_total{cache_name="bloom_index_file_meta_data"} 269967
+databend_cache_miss_count_total{cache_name="table_snapshot"} 358116
+# HELP databend_cache_miss_load_millisecond .
+# cache miss 后加载用时分布
+# TYPE databend_cache_miss_load_millisecond histogram
+databend_cache_miss_load_millisecond_sum{cache_name="table_snapshot"} 7168064.0
+databend_cache_miss_load_millisecond_count{cache_name="table_snapshot"} 358116
+databend_cache_miss_load_millisecond_bucket{le="10.0",cache_name="table_snapshot"} 215943
+databend_cache_miss_load_millisecond_bucket{le="50.0",cache_name="table_snapshot"} 349517
+databend_cache_miss_load_millisecond_bucket{le="100.0",cache_name="table_snapshot"} 357234
+databend_cache_miss_load_millisecond_bucket{le="250.0",cache_name="table_snapshot"} 358005
+databend_cache_miss_load_millisecond_bucket{le="500.0",cache_name="table_snapshot"} 358109
+databend_cache_miss_load_millisecond_bucket{le="1000.0",cache_name="table_snapshot"} 358113
+databend_cache_miss_load_millisecond_bucket{le="2500.0",cache_name="table_snapshot"} 358114
+databend_cache_miss_load_millisecond_bucket{le="5000.0",cache_name="table_snapshot"} 358115
+databend_cache_miss_load_millisecond_bucket{le="10000.0",cache_name="table_snapshot"} 358115
+databend_cache_miss_load_millisecond_bucket{le="20000.0",cache_name="table_snapshot"} 358115
+databend_cache_miss_load_millisecond_bucket{le="30000.0",cache_name="table_snapshot"} 358115
+databend_cache_miss_load_millisecond_bucket{le="60000.0",cache_name="table_snapshot"} 358116
+databend_cache_miss_load_millisecond_bucket{le="300000.0",cache_name="table_snapshot"} 358116
+databend_cache_miss_load_millisecond_bucket{le="600000.0",cache_name="table_snapshot"} 358116
+databend_cache_miss_load_millisecond_bucket{le="1800000.0",cache_name="table_snapshot"} 358116
+databend_cache_miss_load_millisecond_bucket{le="9223372036854776000.0",cache_name="table_snapshot"} 358116
+databend_cache_miss_load_millisecond_sum{cache_name="bloom_index_filter"} 9408755.0
+databend_cache_miss_load_millisecond_count{cache_name="bloom_index_filter"} 270621
+databend_cache_miss_load_millisecond_bucket{le="10.0",cache_name="bloom_index_filter"} 63372
+databend_cache_miss_load_millisecond_bucket{le="50.0",cache_name="bloom_index_filter"} 262564
+databend_cache_miss_load_millisecond_bucket{le="100.0",cache_name="bloom_index_filter"} 269947
+databend_cache_miss_load_millisecond_bucket{le="250.0",cache_name="bloom_index_filter"} 270423
+databend_cache_miss_load_millisecond_bucket{le="500.0",cache_name="bloom_index_filter"} 270610
+databend_cache_miss_load_millisecond_bucket{le="1000.0",cache_name="bloom_index_filter"} 270616
+databend_cache_miss_load_millisecond_bucket{le="2500.0",cache_name="bloom_index_filter"} 270620
+databend_cache_miss_load_millisecond_bucket{le="5000.0",cache_name="bloom_index_filter"} 270620
+databend_cache_miss_load_millisecond_bucket{le="10000.0",cache_name="bloom_index_filter"} 270621
+databend_cache_miss_load_millisecond_bucket{le="20000.0",cache_name="bloom_index_filter"} 270621
+databend_cache_miss_load_millisecond_bucket{le="30000.0",cache_name="bloom_index_filter"} 270621
+databend_cache_miss_load_millisecond_bucket{le="60000.0",cache_name="bloom_index_filter"} 270621
+databend_cache_miss_load_millisecond_bucket{le="300000.0",cache_name="bloom_index_filter"} 270621
+databend_cache_miss_load_millisecond_bucket{le="600000.0",cache_name="bloom_index_filter"} 270621
+databend_cache_miss_load_millisecond_bucket{le="1800000.0",cache_name="bloom_index_filter"} 270621
+databend_cache_miss_load_millisecond_bucket{le="9223372036854776000.0",cache_name="bloom_index_filter"} 270621
+databend_cache_miss_load_millisecond_sum{cache_name="segment_info"} 81872162.0
+databend_cache_miss_load_millisecond_count{cache_name="segment_info"} 4866444
+databend_cache_miss_load_millisecond_bucket{le="10.0",cache_name="segment_info"} 2965603
+databend_cache_miss_load_millisecond_bucket{le="50.0",cache_name="segment_info"} 4754909
+databend_cache_miss_load_millisecond_bucket{le="100.0",cache_name="segment_info"} 4858136
+databend_cache_miss_load_millisecond_bucket{le="250.0",cache_name="segment_info"} 4865345
+databend_cache_miss_load_millisecond_bucket{le="500.0",cache_name="segment_info"} 4866362
+databend_cache_miss_load_millisecond_bucket{le="1000.0",cache_name="segment_info"} 4866406
+databend_cache_miss_load_millisecond_bucket{le="2500.0",cache_name="segment_info"} 4866427
+databend_cache_miss_load_millisecond_bucket{le="5000.0",cache_name="segment_info"} 4866432
+databend_cache_miss_load_millisecond_bucket{le="10000.0",cache_name="segment_info"} 4866435
+databend_cache_miss_load_millisecond_bucket{le="20000.0",cache_name="segment_info"} 4866439
+databend_cache_miss_load_millisecond_bucket{le="30000.0",cache_name="segment_info"} 4866441
+databend_cache_miss_load_millisecond_bucket{le="60000.0",cache_name="segment_info"} 4866444
+databend_cache_miss_load_millisecond_bucket{le="300000.0",cache_name="segment_info"} 4866444
+databend_cache_miss_load_millisecond_bucket{le="600000.0",cache_name="segment_info"} 4866444
+databend_cache_miss_load_millisecond_bucket{le="1800000.0",cache_name="segment_info"} 4866444
+databend_cache_miss_load_millisecond_bucket{le="9223372036854776000.0",cache_name="segment_info"} 4866444
+databend_cache_miss_load_millisecond_sum{cache_name="bloom_index_file_meta_data"} 3671019.0
+databend_cache_miss_load_millisecond_count{cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="10.0",cache_name="bloom_index_file_meta_data"} 199817
+databend_cache_miss_load_millisecond_bucket{le="50.0",cache_name="bloom_index_file_meta_data"} 265811
+databend_cache_miss_load_millisecond_bucket{le="100.0",cache_name="bloom_index_file_meta_data"} 268856
+databend_cache_miss_load_millisecond_bucket{le="250.0",cache_name="bloom_index_file_meta_data"} 269822
+databend_cache_miss_load_millisecond_bucket{le="500.0",cache_name="bloom_index_file_meta_data"} 269893
+databend_cache_miss_load_millisecond_bucket{le="1000.0",cache_name="bloom_index_file_meta_data"} 269902
+databend_cache_miss_load_millisecond_bucket{le="2500.0",cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="5000.0",cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="10000.0",cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="20000.0",cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="30000.0",cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="60000.0",cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="300000.0",cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="600000.0",cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="1800000.0",cache_name="bloom_index_file_meta_data"} 269905
+databend_cache_miss_load_millisecond_bucket{le="9223372036854776000.0",cache_name="bloom_index_file_meta_data"} 269905
+# HELP databend_query_scan_io_bytes_cost_ms .
+# IO 扫描用时分布
+# TYPE databend_query_scan_io_bytes_cost_ms histogram
+databend_query_scan_io_bytes_cost_ms_sum{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 323.0
+databend_query_scan_io_bytes_cost_ms_count{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="10.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 5
+databend_query_scan_io_bytes_cost_ms_bucket{le="50.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 14
+databend_query_scan_io_bytes_cost_ms_bucket{le="100.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="250.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="500.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="1000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="2500.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="5000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="10000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="20000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="30000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="60000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="300000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="600000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="1800000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_bucket{le="9223372036854776000.0",handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 15
+databend_query_scan_io_bytes_cost_ms_sum{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 8609.0
+databend_query_scan_io_bytes_cost_ms_count{handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="10.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 186
+databend_query_scan_io_bytes_cost_ms_bucket{le="50.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 287
+databend_query_scan_io_bytes_cost_ms_bucket{le="100.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 317
+databend_query_scan_io_bytes_cost_ms_bucket{le="250.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 323
+databend_query_scan_io_bytes_cost_ms_bucket{le="500.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 323
+databend_query_scan_io_bytes_cost_ms_bucket{le="1000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 323
+databend_query_scan_io_bytes_cost_ms_bucket{le="2500.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="5000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="10000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="20000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="30000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="60000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="300000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="600000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="1800000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_bucket{le="9223372036854776000.0",handler="HTTPQuery",kind="Query",tenant="wubx",cluster="w189"} 324
+databend_query_scan_io_bytes_cost_ms_sum{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 4958273.0
+databend_query_scan_io_bytes_cost_ms_count{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196299
+databend_query_scan_io_bytes_cost_ms_bucket{le="10.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 108043
+databend_query_scan_io_bytes_cost_ms_bucket{le="50.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 178932
+databend_query_scan_io_bytes_cost_ms_bucket{le="100.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 192951
+databend_query_scan_io_bytes_cost_ms_bucket{le="250.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196094
+databend_query_scan_io_bytes_cost_ms_bucket{le="500.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196282
+databend_query_scan_io_bytes_cost_ms_bucket{le="1000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196293
+databend_query_scan_io_bytes_cost_ms_bucket{le="2500.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196297
+databend_query_scan_io_bytes_cost_ms_bucket{le="5000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196298
+databend_query_scan_io_bytes_cost_ms_bucket{le="10000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196298
+databend_query_scan_io_bytes_cost_ms_bucket{le="20000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196298
+databend_query_scan_io_bytes_cost_ms_bucket{le="30000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196298
+databend_query_scan_io_bytes_cost_ms_bucket{le="60000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196299
+databend_query_scan_io_bytes_cost_ms_bucket{le="300000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196299
+databend_query_scan_io_bytes_cost_ms_bucket{le="600000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196299
+databend_query_scan_io_bytes_cost_ms_bucket{le="1800000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196299
+databend_query_scan_io_bytes_cost_ms_bucket{le="9223372036854776000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 196299
+# HELP databend_session_running_acquired_queries .
+# 当前 Query 队列长度 ？ 还是说现在有 8  Query 在等队列 Eason: 有 8 query在等待。
+# TYPE databend_session_running_acquired_queries gauge
+databend_session_running_acquired_queries 8
+# HELP databend_session_queue_acquire_duration_ms .
+# 等待队列用时分布
+# TYPE databend_session_queue_acquire_duration_ms histogram
+databend_session_queue_acquire_duration_ms_sum 214544830.0
+databend_session_queue_acquire_duration_ms_count 331652
+databend_session_queue_acquire_duration_ms_bucket{le="10.0"} 159261
+databend_session_queue_acquire_duration_ms_bucket{le="50.0"} 166183
+databend_session_queue_acquire_duration_ms_bucket{le="100.0"} 174537
+databend_session_queue_acquire_duration_ms_bucket{le="250.0"} 194189
+databend_session_queue_acquire_duration_ms_bucket{le="500.0"} 218917
+databend_session_queue_acquire_duration_ms_bucket{le="1000.0"} 254682
+databend_session_queue_acquire_duration_ms_bucket{le="2500.0"} 307779
+databend_session_queue_acquire_duration_ms_bucket{le="5000.0"} 328435
+databend_session_queue_acquire_duration_ms_bucket{le="10000.0"} 331588
+databend_session_queue_acquire_duration_ms_bucket{le="20000.0"} 331650
+databend_session_queue_acquire_duration_ms_bucket{le="30000.0"} 331652
+databend_session_queue_acquire_duration_ms_bucket{le="60000.0"} 331652
+databend_session_queue_acquire_duration_ms_bucket{le="300000.0"} 331652
+databend_session_queue_acquire_duration_ms_bucket{le="600000.0"} 331652
+databend_session_queue_acquire_duration_ms_bucket{le="1800000.0"} 331652
+databend_session_queue_acquire_duration_ms_bucket{le="9223372036854776000.0"} 331652
+# HELP databend_fuse_block_write_nums .
+# 总共写了多少个 block
+# TYPE databend_fuse_block_write_nums counter
+databend_fuse_block_write_nums_total 447451
+# HELP databend_fuse_block_write_bytes .
+# 总共写入了多少字节
+# TYPE databend_fuse_block_write_bytes counter
+databend_fuse_block_write_bytes_total 4800237580215
+# HELP databend_fuse_block_write_millioseconds .
+# 写 block 的时间分布
+# TYPE databend_fuse_block_write_millioseconds histogram
+databend_fuse_block_write_millioseconds_sum 44413155.0
+databend_fuse_block_write_millioseconds_count 447451
+databend_fuse_block_write_millioseconds_bucket{le="10.0"} 162600
+databend_fuse_block_write_millioseconds_bucket{le="50.0"} 254727
+databend_fuse_block_write_millioseconds_bucket{le="100.0"} 306505
+databend_fuse_block_write_millioseconds_bucket{le="250.0"} 387415
+databend_fuse_block_write_millioseconds_bucket{le="500.0"} 441774
+databend_fuse_block_write_millioseconds_bucket{le="1000.0"} 446281
+databend_fuse_block_write_millioseconds_bucket{le="2500.0"} 447196
+databend_fuse_block_write_millioseconds_bucket{le="5000.0"} 447381
+databend_fuse_block_write_millioseconds_bucket{le="10000.0"} 447446
+databend_fuse_block_write_millioseconds_bucket{le="20000.0"} 447451
+databend_fuse_block_write_millioseconds_bucket{le="30000.0"} 447451
+databend_fuse_block_write_millioseconds_bucket{le="60000.0"} 447451
+databend_fuse_block_write_millioseconds_bucket{le="300000.0"} 447451
+databend_fuse_block_write_millioseconds_bucket{le="600000.0"} 447451
+databend_fuse_block_write_millioseconds_bucket{le="1800000.0"} 447451
+databend_fuse_block_write_millioseconds_bucket{le="9223372036854776000.0"} 447451
+# HELP databend_fuse_block_index_write_nums .
+# 写 index 的次数
+# TYPE databend_fuse_block_index_write_nums counter
+databend_fuse_block_index_write_nums_total 447450
+# HELP databend_fuse_block_index_write_bytes .
+# 写index 的字节 （累计）
+# TYPE databend_fuse_block_index_write_bytes counter
+databend_fuse_block_index_write_bytes_total 246741112309
+# HELP databend_fuse_block_index_write_milliseconds .
+# 写 index 的时间分布
+# TYPE databend_fuse_block_index_write_milliseconds histogram
+databend_fuse_block_index_write_milliseconds_sum 54024913.0
+databend_fuse_block_index_write_milliseconds_count 447450
+databend_fuse_block_index_write_milliseconds_bucket{le="10.0"} 23
+databend_fuse_block_index_write_milliseconds_bucket{le="50.0"} 244685
+databend_fuse_block_index_write_milliseconds_bucket{le="100.0"} 284603
+databend_fuse_block_index_write_milliseconds_bucket{le="250.0"} 369722
+databend_fuse_block_index_write_milliseconds_bucket{le="500.0"} 435835
+databend_fuse_block_index_write_milliseconds_bucket{le="1000.0"} 446083
+databend_fuse_block_index_write_milliseconds_bucket{le="2500.0"} 447147
+databend_fuse_block_index_write_milliseconds_bucket{le="5000.0"} 447366
+databend_fuse_block_index_write_milliseconds_bucket{le="10000.0"} 447441
+databend_fuse_block_index_write_milliseconds_bucket{le="20000.0"} 447449
+databend_fuse_block_index_write_milliseconds_bucket{le="30000.0"} 447450
+databend_fuse_block_index_write_milliseconds_bucket{le="60000.0"} 447450
+databend_fuse_block_index_write_milliseconds_bucket{le="300000.0"} 447450
+databend_fuse_block_index_write_milliseconds_bucket{le="600000.0"} 447450
+databend_fuse_block_index_write_milliseconds_bucket{le="1800000.0"} 447450
+databend_fuse_block_index_write_milliseconds_bucket{le="9223372036854776000.0"} 447450
+# HELP databend_fuse_commit_mutation_success .
+# 写入 commit 成功的次数
+# TYPE databend_fuse_commit_mutation_success counter
+databend_fuse_commit_mutation_success_total 448698
+# HELP databend_fuse_commit_milliseconds .
+# 写入 commit 累计用时
+# TYPE databend_fuse_commit_milliseconds counter
+databend_fuse_commit_milliseconds_total 22600127
+# HELP databend_compact_hook_execution_ms .
+# 写入 commit 时间分布
+# TYPE databend_compact_hook_execution_ms histogram
+databend_compact_hook_execution_ms_sum{operation="MergeInto"} 19910175.0
+databend_compact_hook_execution_ms_count{operation="MergeInto"} 8959
+databend_compact_hook_execution_ms_bucket{le="10.0",operation="MergeInto"} 0
+databend_compact_hook_execution_ms_bucket{le="50.0",operation="MergeInto"} 0
+databend_compact_hook_execution_ms_bucket{le="100.0",operation="MergeInto"} 24
+databend_compact_hook_execution_ms_bucket{le="250.0",operation="MergeInto"} 275
+databend_compact_hook_execution_ms_bucket{le="500.0",operation="MergeInto"} 755
+databend_compact_hook_execution_ms_bucket{le="1000.0",operation="MergeInto"} 2991
+databend_compact_hook_execution_ms_bucket{le="2500.0",operation="MergeInto"} 5280
+databend_compact_hook_execution_ms_bucket{le="5000.0",operation="MergeInto"} 8794
+databend_compact_hook_execution_ms_bucket{le="10000.0",operation="MergeInto"} 8925
+databend_compact_hook_execution_ms_bucket{le="20000.0",operation="MergeInto"} 8954
+databend_compact_hook_execution_ms_bucket{le="30000.0",operation="MergeInto"} 8957
+databend_compact_hook_execution_ms_bucket{le="60000.0",operation="MergeInto"} 8959
+databend_compact_hook_execution_ms_bucket{le="300000.0",operation="MergeInto"} 8959
+databend_compact_hook_execution_ms_bucket{le="600000.0",operation="MergeInto"} 8959
+databend_compact_hook_execution_ms_bucket{le="1800000.0",operation="MergeInto"} 8959
+databend_compact_hook_execution_ms_bucket{le="9223372036854776000.0",operation="MergeInto"} 8959
+databend_compact_hook_execution_ms_sum{operation="Insert"} 46976842.0
+databend_compact_hook_execution_ms_count{operation="Insert"} 127314
+databend_compact_hook_execution_ms_bucket{le="10.0",operation="Insert"} 0
+databend_compact_hook_execution_ms_bucket{le="50.0",operation="Insert"} 5283
+databend_compact_hook_execution_ms_bucket{le="100.0",operation="Insert"} 35604
+databend_compact_hook_execution_ms_bucket{le="250.0",operation="Insert"} 58529
+databend_compact_hook_execution_ms_bucket{le="500.0",operation="Insert"} 84117
+databend_compact_hook_execution_ms_bucket{le="1000.0",operation="Insert"} 124818
+databend_compact_hook_execution_ms_bucket{le="2500.0",operation="Insert"} 127138
+databend_compact_hook_execution_ms_bucket{le="5000.0",operation="Insert"} 127263
+databend_compact_hook_execution_ms_bucket{le="10000.0",operation="Insert"} 127302
+databend_compact_hook_execution_ms_bucket{le="20000.0",operation="Insert"} 127308
+databend_compact_hook_execution_ms_bucket{le="30000.0",operation="Insert"} 127311
+databend_compact_hook_execution_ms_bucket{le="60000.0",operation="Insert"} 127312
+databend_compact_hook_execution_ms_bucket{le="300000.0",operation="Insert"} 127314
+databend_compact_hook_execution_ms_bucket{le="600000.0",operation="Insert"} 127314
+databend_compact_hook_execution_ms_bucket{le="1800000.0",operation="Insert"} 127314
+databend_compact_hook_execution_ms_bucket{le="9223372036854776000.0",operation="Insert"} 127314
+# HELP databend_cache_hit_count .
+# cache 命中的次数
+# TYPE databend_cache_hit_count counter
+databend_cache_hit_count_total{cache_name="prune_partitions"} 31
+databend_cache_hit_count_total{cache_name="bloom_index_filter"} 121893
+databend_cache_hit_count_total{cache_name="table_snapshot"} 635968
+databend_cache_hit_count_total{cache_name="segment_info"} 13625446
+databend_cache_hit_count_total{cache_name="bloom_index_file_meta_data"} 120888
+# HELP databend_fuse_compact_block_build_lazy_part_milliseconds .
+# compact构建lazy part花费的时间，单位ms. lazy part是segment级别的。
+# TYPE databend_fuse_compact_block_build_lazy_part_milliseconds histogram
+databend_fuse_compact_block_build_lazy_part_milliseconds_sum 7254731.0
+databend_fuse_compact_block_build_lazy_part_milliseconds_count 136271
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="10.0"} 38747
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="50.0"} 56045
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="100.0"} 129252
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="250.0"} 135098
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="500.0"} 136195
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="1000.0"} 136235
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="2500.0"} 136255
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="5000.0"} 136260
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="10000.0"} 136263
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="20000.0"} 136267
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="30000.0"} 136268
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="60000.0"} 136271
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="300000.0"} 136271
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="600000.0"} 136271
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="1800000.0"} 136271
+databend_fuse_compact_block_build_lazy_part_milliseconds_bucket{le="9223372036854776000.0"} 136271
+# HELP databend_fuse_compact_block_build_task_milliseconds .
+# compact构建part花费的时间，单位ms。 part是block级别的，一个part即为一个compact任务。
+# TYPE databend_fuse_compact_block_build_task_milliseconds histogram
+databend_fuse_compact_block_build_task_milliseconds_sum 3035452.0
+databend_fuse_compact_block_build_task_milliseconds_count 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="10.0"} 101777
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="50.0"} 117598
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="100.0"} 126450
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="250.0"} 135718
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="500.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="1000.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="2500.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="5000.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="10000.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="20000.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="30000.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="60000.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="300000.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="600000.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="1800000.0"} 136271
+databend_fuse_compact_block_build_task_milliseconds_bucket{le="9223372036854776000.0"} 136271
+# HELP databend_fuse_compact_block_read_nums .
+# compact 读取的 Block 数量
+# TYPE databend_fuse_compact_block_read_nums counter
+databend_fuse_compact_block_read_nums_total 515868
+# HELP databend_fuse_compact_block_read_bytes .
+# compact 读取的大小，单位字节， 累计值
+# TYPE databend_fuse_compact_block_read_bytes counter
+databend_fuse_compact_block_read_bytes_total 14744722824687
+# HELP databend_fuse_remote_io_read_parts .
+# 这里的 remote_io 是指从 s3 上读取， parts  是指分区是指从object storage上读取的table data block的个数 (累计值) block 可能是被部分读取的 (比如表中的几列, 而不是全部的列)
+# TYPE databend_fuse_remote_io_read_parts counter
+databend_fuse_remote_io_read_parts_total 706284
+# HELP databend_fuse_remote_io_seeks .
+# 从是指从object storage上读取过程中，独立的IO的次数(累计值)，一个block中的n个列的读取，可能是1到n次 read io
+# TYPE databend_fuse_remote_io_seeks counter
+databend_fuse_remote_io_seeks_total 30307034
+# HELP databend_fuse_remote_io_read_bytes .
+# 是指从object storage上读取的bytes(累计值)
+# TYPE databend_fuse_remote_io_read_bytes counter
+databend_fuse_remote_io_read_bytes_total 7839152945075
+# HELP databend_fuse_remote_io_seeks_after_merged .
+# 从是指从object storage上读取过程中， IO 合并的次数
+# TYPE databend_fuse_remote_io_seeks_after_merged counter
+databend_fuse_remote_io_seeks_after_merged_total 3644797
+# HELP databend_fuse_remote_io_read_bytes_after_merged .
+# 
+# TYPE databend_fuse_remote_io_read_bytes_after_merged counter
+databend_fuse_remote_io_read_bytes_after_merged_total 7840095321762
+# HELP databend_fuse_remote_io_read_milliseconds .
+# 读取 S3 时间分布
+# TYPE databend_fuse_remote_io_read_milliseconds histogram
+databend_fuse_remote_io_read_milliseconds_sum 48205454.0
+databend_fuse_remote_io_read_milliseconds_count 706273
+databend_fuse_remote_io_read_milliseconds_bucket{le="10.0"} 233232
+databend_fuse_remote_io_read_milliseconds_bucket{le="50.0"} 410092
+databend_fuse_remote_io_read_milliseconds_bucket{le="100.0"} 564723
+databend_fuse_remote_io_read_milliseconds_bucket{le="250.0"} 686414
+databend_fuse_remote_io_read_milliseconds_bucket{le="500.0"} 702333
+databend_fuse_remote_io_read_milliseconds_bucket{le="1000.0"} 704326
+databend_fuse_remote_io_read_milliseconds_bucket{le="2500.0"} 705470
+databend_fuse_remote_io_read_milliseconds_bucket{le="5000.0"} 705921
+databend_fuse_remote_io_read_milliseconds_bucket{le="10000.0"} 706177
+databend_fuse_remote_io_read_milliseconds_bucket{le="20000.0"} 706261
+databend_fuse_remote_io_read_milliseconds_bucket{le="30000.0"} 706271
+databend_fuse_remote_io_read_milliseconds_bucket{le="60000.0"} 706273
+databend_fuse_remote_io_read_milliseconds_bucket{le="300000.0"} 706273
+databend_fuse_remote_io_read_milliseconds_bucket{le="600000.0"} 706273
+databend_fuse_remote_io_read_milliseconds_bucket{le="1800000.0"} 706273
+databend_fuse_remote_io_read_milliseconds_bucket{le="9223372036854776000.0"} 706273
+# HELP databend_fuse_compact_block_read_milliseconds .
+# compact 中读取 Block 的时间分布
+# TYPE databend_fuse_compact_block_read_milliseconds histogram
+databend_fuse_compact_block_read_milliseconds_sum 18079535.0
+databend_fuse_compact_block_read_milliseconds_count 135471
+databend_fuse_compact_block_read_milliseconds_bucket{le="10.0"} 2731
+databend_fuse_compact_block_read_milliseconds_bucket{le="50.0"} 26038
+databend_fuse_compact_block_read_milliseconds_bucket{le="100.0"} 78052
+databend_fuse_compact_block_read_milliseconds_bucket{le="250.0"} 128340
+databend_fuse_compact_block_read_milliseconds_bucket{le="500.0"} 133754
+databend_fuse_compact_block_read_milliseconds_bucket{le="1000.0"} 134472
+databend_fuse_compact_block_read_milliseconds_bucket{le="2500.0"} 135005
+databend_fuse_compact_block_read_milliseconds_bucket{le="5000.0"} 135247
+databend_fuse_compact_block_read_milliseconds_bucket{le="10000.0"} 135396
+databend_fuse_compact_block_read_milliseconds_bucket{le="20000.0"} 135462
+databend_fuse_compact_block_read_milliseconds_bucket{le="30000.0"} 135470
+databend_fuse_compact_block_read_milliseconds_bucket{le="60000.0"} 135471
+databend_fuse_compact_block_read_milliseconds_bucket{le="300000.0"} 135471
+databend_fuse_compact_block_read_milliseconds_bucket{le="600000.0"} 135471
+databend_fuse_compact_block_read_milliseconds_bucket{le="1800000.0"} 135471
+databend_fuse_compact_block_read_milliseconds_bucket{le="9223372036854776000.0"} 135471
+# HELP databend_fuse_commit_mutation_modified_segment_exists_in_latest .
+# 
+# TYPE databend_fuse_commit_mutation_modified_segment_exists_in_latest counter
+databend_fuse_commit_mutation_modified_segment_exists_in_latest_total 149537
+# HELP databend_compact_hook_compaction_ms .
+# TYPE databend_compact_hook_compaction_ms histogram
+databend_compact_hook_compaction_ms_sum{operation="MergeInto"} 18651137.0
+databend_compact_hook_compaction_ms_count{operation="MergeInto"} 8958
+databend_compact_hook_compaction_ms_bucket{le="10.0",operation="MergeInto"} 2
+databend_compact_hook_compaction_ms_bucket{le="50.0",operation="MergeInto"} 3
+databend_compact_hook_compaction_ms_bucket{le="100.0",operation="MergeInto"} 18
+databend_compact_hook_compaction_ms_bucket{le="250.0",operation="MergeInto"} 231
+databend_compact_hook_compaction_ms_bucket{le="500.0",operation="MergeInto"} 709
+databend_compact_hook_compaction_ms_bucket{le="1000.0",operation="MergeInto"} 2072
+databend_compact_hook_compaction_ms_bucket{le="2500.0",operation="MergeInto"} 5602
+databend_compact_hook_compaction_ms_bucket{le="5000.0",operation="MergeInto"} 8903
+databend_compact_hook_compaction_ms_bucket{le="10000.0",operation="MergeInto"} 8946
+databend_compact_hook_compaction_ms_bucket{le="20000.0",operation="MergeInto"} 8958
+databend_compact_hook_compaction_ms_bucket{le="30000.0",operation="MergeInto"} 8958
+databend_compact_hook_compaction_ms_bucket{le="60000.0",operation="MergeInto"} 8958
+databend_compact_hook_compaction_ms_bucket{le="300000.0",operation="MergeInto"} 8958
+databend_compact_hook_compaction_ms_bucket{le="600000.0",operation="MergeInto"} 8958
+databend_compact_hook_compaction_ms_bucket{le="1800000.0",operation="MergeInto"} 8958
+databend_compact_hook_compaction_ms_bucket{le="9223372036854776000.0",operation="MergeInto"} 8958
+databend_compact_hook_compaction_ms_sum{operation="Insert"} 277209308.0
+databend_compact_hook_compaction_ms_count{operation="Insert"} 127310
+databend_compact_hook_compaction_ms_bucket{le="10.0",operation="Insert"} 0
+databend_compact_hook_compaction_ms_bucket{le="50.0",operation="Insert"} 4
+databend_compact_hook_compaction_ms_bucket{le="100.0",operation="Insert"} 6193
+databend_compact_hook_compaction_ms_bucket{le="250.0",operation="Insert"} 8548
+databend_compact_hook_compaction_ms_bucket{le="500.0",operation="Insert"} 14068
+databend_compact_hook_compaction_ms_bucket{le="1000.0",operation="Insert"} 27918
+databend_compact_hook_compaction_ms_bucket{le="2500.0",operation="Insert"} 74795
+databend_compact_hook_compaction_ms_bucket{le="5000.0",operation="Insert"} 126452
+databend_compact_hook_compaction_ms_bucket{le="10000.0",operation="Insert"} 127116
+databend_compact_hook_compaction_ms_bucket{le="20000.0",operation="Insert"} 127270
+databend_compact_hook_compaction_ms_bucket{le="30000.0",operation="Insert"} 127302
+databend_compact_hook_compaction_ms_bucket{le="60000.0",operation="Insert"} 127310
+databend_compact_hook_compaction_ms_bucket{le="300000.0",operation="Insert"} 127310
+databend_compact_hook_compaction_ms_bucket{le="600000.0",operation="Insert"} 127310
+databend_compact_hook_compaction_ms_bucket{le="1800000.0",operation="Insert"} 127310
+databend_compact_hook_compaction_ms_bucket{le="9223372036854776000.0",operation="Insert"} 127310
+# HELP databend_fuse_segments_range_pruning_before .
+# 执行segment级别的range pruning之前的segment数量
+# TYPE databend_fuse_segments_range_pruning_before counter
+databend_fuse_segments_range_pruning_before_total 10852339
+# HELP databend_fuse_bytes_segment_range_pruning_before .
+# 执行segment级别的range pruning之前的数据量大小。
+# TYPE databend_fuse_bytes_segment_range_pruning_before counter
+databend_fuse_bytes_segment_range_pruning_before_total 2546897995256536
+# HELP databend_fuse_segments_range_pruning_after .
+# 执行segment级别的range pruning之后的segment数量，和databend_fuse_segments_range_pruning_before对比可以获取到segment range pruning裁剪了多少个segment.
+# TYPE databend_fuse_segments_range_pruning_after counter
+databend_fuse_segments_range_pruning_after_total 402013
+# HELP databend_fuse_bytes_segment_range_pruning_after .
+# 执行segment级别的range pruning之后的数据量。和databend_fuse_bytes_segment_range_pruning_before对比可以获取到segment range pruning裁剪了多少字节数据.
+# TYPE databend_fuse_bytes_segment_range_pruning_after counter
+databend_fuse_bytes_segment_range_pruning_after_total 436183066446944
+# HELP databend_fuse_blocks_range_pruning_before .
+# 执行block级别的range pruning之前的block数量。
+# TYPE databend_fuse_blocks_range_pruning_before counter
+databend_fuse_blocks_range_pruning_before_total 3261218
+# HELP databend_fuse_bytes_block_bloom_pruning_before .
+# 执行block级别的bloom pruning之前的数据量
+# TYPE databend_fuse_bytes_block_bloom_pruning_before counter
+databend_fuse_bytes_block_bloom_pruning_before_total 443836501522026
+# HELP databend_fuse_blocks_range_pruning_after .
+# TYPE databend_fuse_blocks_range_pruning_after counter
+databend_fuse_blocks_range_pruning_after_total 419442
+# HELP databend_fuse_bytes_block_bloom_pruning_after .
+# TYPE databend_fuse_bytes_block_bloom_pruning_after counter
+databend_fuse_bytes_block_bloom_pruning_after_total 18627382664796
+# HELP databend_fuse_blocks_bloom_pruning_before .
+# TYPE databend_fuse_blocks_bloom_pruning_before counter
+databend_fuse_blocks_bloom_pruning_before_total 390855
+# HELP databend_fuse_block_index_read_bytes .
+# TYPE databend_fuse_block_index_read_bytes counter
+databend_fuse_block_index_read_bytes_total 229324145
+# HELP databend_fuse_blocks_bloom_pruning_after .
+# TYPE databend_fuse_blocks_bloom_pruning_after counter
+databend_fuse_blocks_bloom_pruning_after_total 156344
+# HELP databend_fuse_pruning_milliseconds .
+# TYPE databend_fuse_pruning_milliseconds histogram
+databend_fuse_pruning_milliseconds_sum 13361858.0
+databend_fuse_pruning_milliseconds_count 402013
+databend_fuse_pruning_milliseconds_bucket{le="10.0"} 163761
+databend_fuse_pruning_milliseconds_bucket{le="50.0"} 322724
+databend_fuse_pruning_milliseconds_bucket{le="100.0"} 398023
+databend_fuse_pruning_milliseconds_bucket{le="250.0"} 401369
+databend_fuse_pruning_milliseconds_bucket{le="500.0"} 401985
+databend_fuse_pruning_milliseconds_bucket{le="1000.0"} 402004
+databend_fuse_pruning_milliseconds_bucket{le="2500.0"} 402012
+databend_fuse_pruning_milliseconds_bucket{le="5000.0"} 402012
+databend_fuse_pruning_milliseconds_bucket{le="10000.0"} 402013
+databend_fuse_pruning_milliseconds_bucket{le="20000.0"} 402013
+databend_fuse_pruning_milliseconds_bucket{le="30000.0"} 402013
+databend_fuse_pruning_milliseconds_bucket{le="60000.0"} 402013
+databend_fuse_pruning_milliseconds_bucket{le="300000.0"} 402013
+databend_fuse_pruning_milliseconds_bucket{le="600000.0"} 402013
+databend_fuse_pruning_milliseconds_bucket{le="1800000.0"} 402013
+databend_fuse_pruning_milliseconds_bucket{le="9223372036854776000.0"} 402013
+# HELP databend_fuse_remote_io_deserialize_milliseconds .
+# 将raw data 解压和反序列化为DataBlock的用时
+# TYPE databend_fuse_remote_io_deserialize_milliseconds histogram
+databend_fuse_remote_io_deserialize_milliseconds_sum 28842129.0
+databend_fuse_remote_io_deserialize_milliseconds_count 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="10.0"} 70228
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="50.0"} 101273
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="100.0"} 113733
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="250.0"} 134202
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="500.0"} 166865
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="1000.0"} 184366
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="2500.0"} 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="5000.0"} 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="10000.0"} 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="20000.0"} 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="30000.0"} 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="60000.0"} 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="300000.0"} 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="600000.0"} 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="1800000.0"} 184456
+databend_fuse_remote_io_deserialize_milliseconds_bucket{le="9223372036854776000.0"} 184456
+# HELP databend_query_http_response_errors_count .
+# 请求出错的次数及类型
+# TYPE databend_query_http_response_errors_count counter
+databend_query_http_response_errors_count_total{err="UnknownDatabase",code="1003"} 5
+databend_query_http_response_errors_count_total{err="SyntaxException",code="1005"} 73
+databend_query_http_response_errors_count_total{err="BadArguments",code="1006"} 13364
+databend_query_http_response_errors_count_total{err="UnknownTable",code="1025"} 117
+databend_query_http_response_errors_count_total{err="SemanticError",code="1065"} 9
+databend_query_http_response_errors_count_total{err="TxnRetryMaxTimes",code="2317"} 1
+# HELP databend_session_queued_queries .
+# 当前在 Query 队列的 SQL （正运行的任务）
+# TYPE databend_session_queued_queries gauge
+databend_session_queued_queries 19
+# HELP databend_fuse_commit_mutation_unresolvable_conflict .
+# 无法处理的 commit 争用发生次数 （累计）
+# TYPE databend_fuse_commit_mutation_unresolvable_conflict counter
+databend_fuse_commit_mutation_unresolvable_conflict_total 1060
+# HELP databend_fuse_commit_aborts .
+# commit 报错的次数
+# TYPE databend_fuse_commit_aborts counter
+databend_fuse_commit_aborts_total 1060
+# HELP databend_query_write_io_bytes_cost_ms .
+# TYPE databend_query_write_io_bytes_cost_ms histogram
+databend_query_write_io_bytes_cost_ms_sum{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 8.0
+databend_query_write_io_bytes_cost_ms_count{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="10.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="50.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="100.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="250.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="500.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="1000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="2500.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="5000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="10000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="20000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="30000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="60000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="300000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="600000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="1800000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+databend_query_write_io_bytes_cost_ms_bucket{le="9223372036854776000.0",handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189"} 2
+# HELP databend_merge_into_split_milliseconds .
+# TYPE databend_merge_into_split_milliseconds histogram
+databend_merge_into_split_milliseconds_sum 729.0
+databend_merge_into_split_milliseconds_count 9796
+databend_merge_into_split_milliseconds_bucket{le="10.0"} 9767
+databend_merge_into_split_milliseconds_bucket{le="50.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="100.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="250.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="500.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="1000.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="2500.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="5000.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="10000.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="20000.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="30000.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="60000.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="300000.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="600000.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="1800000.0"} 9796
+databend_merge_into_split_milliseconds_bucket{le="9223372036854776000.0"} 9796
+# HELP databend_merge_into_unmatched_rows .
+# merge into 无法匹配到行的数量，累计值
+# TYPE databend_merge_into_unmatched_rows counter
+databend_merge_into_unmatched_rows_total 3209850
+# HELP databend_merge_into_append_blocks_counter .
+# merge into 写入的 block 数量，累计值
+# TYPE databend_merge_into_append_blocks_counter counter
+databend_merge_into_append_blocks_counter_total 9796
+# HELP databend_merge_into_append_blocks_rows_counter .
+# merge into 写入的行数，累计值
+# TYPE databend_merge_into_append_blocks_rows_counter counter
+databend_merge_into_append_blocks_rows_counter_total 7392479
+# HELP databend_merge_into_apply_milliseconds .
+# merge into 时间分布（这个时间是否包含下面的）
+# TYPE databend_merge_into_apply_milliseconds histogram
+databend_merge_into_apply_milliseconds_sum 12782428.0
+databend_merge_into_apply_milliseconds_count 8959
+databend_merge_into_apply_milliseconds_bucket{le="10.0"} 3524
+databend_merge_into_apply_milliseconds_bucket{le="50.0"} 3524
+databend_merge_into_apply_milliseconds_bucket{le="100.0"} 3527
+databend_merge_into_apply_milliseconds_bucket{le="250.0"} 3584
+databend_merge_into_apply_milliseconds_bucket{le="500.0"} 3658
+databend_merge_into_apply_milliseconds_bucket{le="1000.0"} 4269
+databend_merge_into_apply_milliseconds_bucket{le="2500.0"} 6367
+databend_merge_into_apply_milliseconds_bucket{le="5000.0"} 8912
+databend_merge_into_apply_milliseconds_bucket{le="10000.0"} 8944
+databend_merge_into_apply_milliseconds_bucket{le="20000.0"} 8957
+databend_merge_into_apply_milliseconds_bucket{le="30000.0"} 8958
+databend_merge_into_apply_milliseconds_bucket{le="60000.0"} 8959
+databend_merge_into_apply_milliseconds_bucket{le="300000.0"} 8959
+databend_merge_into_apply_milliseconds_bucket{le="600000.0"} 8959
+databend_merge_into_apply_milliseconds_bucket{le="1800000.0"} 8959
+databend_merge_into_apply_milliseconds_bucket{le="9223372036854776000.0"} 8959
+# HELP databend_merge_into_not_matched_operation_milliseconds .
+# merge into  not matched 部分的时间分布
+# TYPE databend_merge_into_not_matched_operation_milliseconds histogram
+databend_merge_into_not_matched_operation_milliseconds_sum 9740.0
+databend_merge_into_not_matched_operation_milliseconds_count 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="10.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="50.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="100.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="250.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="500.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="1000.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="2500.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="5000.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="10000.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="20000.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="30000.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="60000.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="300000.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="600000.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="1800000.0"} 3801
+databend_merge_into_not_matched_operation_milliseconds_bucket{le="9223372036854776000.0"} 3801
+# HELP databend_query_error .
+# 查询出错的次数 （累计）
+# TYPE databend_query_error counter
+databend_query_error_total{handler="HTTPQuery",kind="Other",tenant="wubx",cluster="w189"} 1
+# HELP databend_merge_into_matched_rows .
+# TYPE databend_merge_into_matched_rows counter
+databend_merge_into_matched_rows_total 4182629
+# HELP databend_merge_into_matched_operation_milliseconds .
+# TYPE databend_merge_into_matched_operation_milliseconds histogram
+databend_merge_into_matched_operation_milliseconds_sum 32050.0
+databend_merge_into_matched_operation_milliseconds_count 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="10.0"} 5501
+databend_merge_into_matched_operation_milliseconds_bucket{le="50.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="100.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="250.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="500.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="1000.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="2500.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="5000.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="10000.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="20000.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="30000.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="60000.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="300000.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="600000.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="1800000.0"} 5995
+databend_merge_into_matched_operation_milliseconds_bucket{le="9223372036854776000.0"} 5995
+# HELP databend_merge_into_accumulate_milliseconds .
+# merge into 整体的时间？
+# TYPE databend_merge_into_accumulate_milliseconds histogram
+databend_merge_into_accumulate_milliseconds_sum 39.0
+databend_merge_into_accumulate_milliseconds_count 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="10.0"} 5994
+databend_merge_into_accumulate_milliseconds_bucket{le="50.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="100.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="250.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="500.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="1000.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="2500.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="5000.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="10000.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="20000.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="30000.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="60000.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="300000.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="600000.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="1800000.0"} 5995
+databend_merge_into_accumulate_milliseconds_bucket{le="9223372036854776000.0"} 5995
+# HELP databend_merge_into_replace_blocks_counter .
+# merge into 生成替换的 block 数量
+# TYPE databend_merge_into_replace_blocks_counter counter
+databend_merge_into_replace_blocks_counter_total 5674
+# HELP databend_merge_into_replace_blocks_rows_counter .
+# merge into 替换的行数
+# TYPE databend_merge_into_replace_blocks_rows_counter counter
+databend_merge_into_replace_blocks_rows_counter_total 1392042163
+# HELP databend_fuse_commit_copied_files .
+# copy into 提交的文件个数（累计值）
+# TYPE databend_fuse_commit_copied_files counter
+databend_fuse_commit_copied_files_total 21479
+# HELP databend_query_failed .
+# 请求失败的次数，（累计）
+# TYPE databend_query_failed counter
+databend_query_failed_total{handler="HTTPQuery",kind="Insert",tenant="wubx",cluster="w189",code="3001"} 1
+# EOF
