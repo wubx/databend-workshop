@@ -39,15 +39,18 @@ def create():
         sql="create table if not exists {0}(\n".format(t)
         i = 0
         for c in t_cols:
-            t = c[1]
-            if t.startswith('varchar'):
-                t ='varchar'
+            col_type = c[1]
+            if col_type.startswith('varchar'):
+                col_type ='varchar'
             if c[2]=="NO":
-                sql += "{} {} {}".format(c[0], t ,"NOT NULL")
+                sql += "{} {} {}".format(c[0], col_type ,"NOT NULL")
             else:
-                sql += "{} {}".format(c[0], t)
+                sql += "{} {}".format(c[0], col_type)
             if c[3]!=None:
-                sql += " DEFAULT '{}'".format(c[3])
+                if col_type in ["datetime", "timestamp"] and c[3].upper() == "CURRENT_TIMESTAMP":
+                    sql += " DEFAULT {}".format(c[3])
+                else:
+                    sql += " DEFAULT '{}'".format(c[3])
 
             i = i+1
             if i < len(t_cols):
