@@ -42,6 +42,11 @@ def create():
             col_type = c[1]
             if col_type.startswith('varchar'):
                 col_type ='varchar'
+            if col_type.startswith('longtext'):
+                col_type ='varchar'
+            if col_type.startswith('float'):
+                col_type ='float'
+                
             if c[2]=="NO":
                 sql += "{} {} {}".format(c[0], col_type ,"NOT NULL")
             else:
