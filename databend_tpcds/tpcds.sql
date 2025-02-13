@@ -172,7 +172,7 @@ create table store
     s_zip                     char(10)                          null,
     s_country                 varchar(20)                       null,
     s_gmt_offset              decimal(5,2)                      null,
-    s_tax_precentage          decimal(5,2)                      null
+    s_tax_percentage          decimal(5,2)                      null
 );
 
 create table call_center
