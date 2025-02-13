@@ -46,7 +46,7 @@ cat ./tpcds.sql | bendsql
 for t in ${tables[@]}
 do
     echo "$t"
-    insert_sql="copy into  $DATABASE.$t  from @tpch_data/tpcds1000/ pattern='.*${t}_[\d+].*[.]gz' file_format = (type = CSV compression=auto field_delimiter = '|' record_delimiter = '\n')"
+    insert_sql="copy into  $DATABASE.$t  from @mydata/tpcds1000/ pattern='.*${t}_[\d+].*[.]gz' file_format = (type = CSV compression=auto field_delimiter = '|' record_delimiter = '\n')"
     echo $insert_sql
     echo $insert_sql | bendsql --time
     echo "analyze table $DATABASE.$t;" | bendsql --time
