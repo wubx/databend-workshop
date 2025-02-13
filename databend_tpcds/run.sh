@@ -15,6 +15,6 @@ do
     fi
 
     echo "Run $sql start."
-    cat "$QUERY_DIR"/"$sql" | $MYSQL_CLIENT_CONNECT
+    cat "$QUERY_DIR"/"$sql" | $BENDSQL_CLIENT_CONNECT
     echo "Run $sql done."
 done
