@@ -22,6 +22,23 @@
 
 
 
+## 该 settings 配置建议
+
+例如节点可用内存 400G， max_running_queries=8 推荐配置为：
+
+```
+[query.settings]
+#400/8*1024*1024*1024=53687091200
+max_query_memory_usage=53687091200
+query_out_of_memory_behavior='spilling'
+```
+
+风险提示：
+
+对于配置成 spilling 的情况下，如果 Databend 堆积的大的任务都需要 spill ，则有可能会造成 Databend 中任务积压。 这个就需要 Databend Cloud 上面的 multi cluster 来动态的扩容来顶此类业务。
+
+
+
 ## 该功能上线后影响
 
 该功能上线后以下 settings 失效：
