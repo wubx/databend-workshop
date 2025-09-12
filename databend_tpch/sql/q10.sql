@@ -1,7 +1,7 @@
 select
     c_custkey,
     c_name,
-    sum(l_extendedprice * (1 - l_discount)) as revenue,
+    TRUNCATE(sum(l_extendedprice * (1 - l_discount)), 3) as revenue,
     c_acctbal,
     n_name,
     c_address,
@@ -28,4 +28,4 @@ group by
     c_address,
     c_comment
 order by
-    revenue desc limit 5;
+    revenue desc limit 20;

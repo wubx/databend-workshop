@@ -1,37 +1,34 @@
-select
+SELECT
     s_name,
     s_address
-from
+FROM
     supplier,
     nation
-where
-        s_suppkey in (
-        select
+WHERE
+    s_suppkey IN (
+        SELECT
             ps_suppkey
-        from
+        FROM
             partsupp
-        where
-                ps_partkey in (
-                select
+        WHERE
+            ps_partkey IN (
+                SELECT
                     p_partkey
-                from
+                FROM
                     part
-                where
-                        p_name like 'forest%'
-            )
-          and ps_availqty > (
-            select
-                    0.5 * sum(l_quantity)
-            from
-                lineitem
-            where
-                    l_partkey = ps_partkey
-              and l_suppkey = ps_suppkey
-              and l_shipdate >= to_date('1994-01-01')
-              and l_shipdate < add_years(to_date('1994-01-01'), 1)
-        )
-    )
-  and s_nationkey = n_nationkey
-  and n_name = 'CANADA'
-order by
-    s_name;
+                WHERE
+                    p_name LIKE 'forest%')
+                AND ps_availqty > (
+                    SELECT
+                        0.5 * sum(l_quantity)
+                    FROM
+                        lineitem
+                    WHERE
+                        l_partkey = ps_partkey
+                        AND l_suppkey = ps_suppkey
+                        AND l_shipdate >= CAST('1994-01-01' AS date)
+                        AND l_shipdate < CAST('1995-01-01' AS date)))
+            AND s_nationkey = n_nationkey
+            AND n_name = 'CANADA'
+        ORDER BY
+            s_name;

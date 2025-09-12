@@ -1,13 +1,30 @@
+with revenue as (
+    select
+        l_suppkey as supplier_no,
+        truncate(sum(l_extendedprice * (1 - l_discount)), 2) as total_revenue
+    from
+        lineitem
+    where
+            l_shipdate >= to_date ('1996-01-01')
+      and l_shipdate < to_date ('1996-04-01')
+    group by
+        l_suppkey)
 select
-            100.00 * sum(case
-                             when p_type like 'PROMO%'
-                                 then l_extendedprice * (1 - l_discount)
-                             else 0
-            end) / sum(l_extendedprice * (1 - l_discount)) as promo_revenue
+    s_suppkey,
+    s_name,
+    s_address,
+    s_phone,
+    total_revenue
 from
-    lineitem,
-    part
+    supplier,
+    revenue
 where
-        l_partkey = p_partkey
-  and l_shipdate >= to_date('1995-09-01')
-  and l_shipdate < add_months(to_date('1995-09-01'), 1);
+        s_suppkey = supplier_no
+  and total_revenue = (
+    select
+        max(total_revenue)
+    from
+        revenue
+)
+order by
+    s_suppkey;

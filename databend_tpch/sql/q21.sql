@@ -1,39 +1,38 @@
-select
+SELECT
     s_name,
-    truncate(count(*),4) as numwait
-from
+    count(*) AS numwait
+FROM
     supplier,
     lineitem l1,
     orders,
     nation
-where
-        s_suppkey = l1.l_suppkey
-  and o_orderkey = l1.l_orderkey
-  and o_orderstatus = 'F'
-  and l1.l_receiptdate > l1.l_commitdate
-  and exists (
-        select
+WHERE
+    s_suppkey = l1.l_suppkey
+    AND o_orderkey = l1.l_orderkey
+    AND o_orderstatus = 'F'
+    AND l1.l_receiptdate > l1.l_commitdate
+    AND EXISTS (
+        SELECT
             *
-        from
+        FROM
             lineitem l2
-        where
-                l2.l_orderkey = l1.l_orderkey
-          and l2.l_suppkey <> l1.l_suppkey
-    )
-  and not exists (
-        select
+        WHERE
+            l2.l_orderkey = l1.l_orderkey
+            AND l2.l_suppkey <> l1.l_suppkey)
+    AND NOT EXISTS (
+        SELECT
             *
-        from
+        FROM
             lineitem l3
-        where
-                l3.l_orderkey = l1.l_orderkey
-          and l3.l_suppkey <> l1.l_suppkey
-          and l3.l_receiptdate > l3.l_commitdate
-    )
-  and s_nationkey = n_nationkey
-  and n_name = 'SAUDI ARABIA'
-group by
+        WHERE
+            l3.l_orderkey = l1.l_orderkey
+            AND l3.l_suppkey <> l1.l_suppkey
+            AND l3.l_receiptdate > l3.l_commitdate)
+    AND s_nationkey = n_nationkey
+    AND n_name = 'SAUDI ARABIA'
+GROUP BY
     s_name
-order by
-    numwait desc,
-    s_name;
+ORDER BY
+    numwait DESC,
+    s_name
+LIMIT 100;
