@@ -1,0 +1,3 @@
+[submodule "databend_tpch"]
+	path = databend_tpch
+	url = https://github.com/wubx/databend_tpch.git
